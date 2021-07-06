@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="description" content="eduTV 말하자 홈페이지">
+	<meta name="keywords" content="eduTV, 말하자, eduTV 말하자, 말하자 홈페이지">
+	<meta property="og:image" content="./resource/img/logo.png">
+
+	<title>내 강의실 | eduTV 말하자</title>
+
+	<link rel="stylesheet" href="./resource/css/app.css">
+
+	<script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="./resource/js/lib/bluebird.min.js"></script>
+	<script src="./resource/js/lib/video.min.js"></script>
+	<script src="./resource/js/lib/slick.min.js"></script>
+	<script src="./resource/js/common.js"></script>
+</head>
+<body class="is-home">
+	<main id="wrap">
+		<header class="header-area"></header>
+
+		<!-- [Start] main-area -->
+		<section class="main-area myclass-area" id="main">
+			
+			<div class="cont-area">
+				<div class="cont-grid type2">
+					<h2 class="cont-tit1">내 강의실</h2>
+					<div class="cont-inner type-box">
+						<div class="class-tit4"><strong>홍길동</strong> 고객님 안녕하세요. </div>
+							
+						<dl class="myinfo-list">
+							<div class="item">
+								<dt>회원정보</dt>
+								<dd>
+									<dl class="myinfo">
+										<div>
+											<dt>아이디</dt>
+											<dd>abc123</dd>
+										</div>
+										<div>
+											<dt>연락처</dt>
+											<dd>010-9876-5432</dd>
+										</div>
+										<div>
+											<dt>이메일</dt>
+											<dd>abc123@naver.com</dd>
+										</div>
+									</dl>
+									<div class="btn-area">
+										<button type="button" class="btn-base type-line"><span>개인정보수정</span></button>
+									</div>
+								</dd>
+							</div>
+							<div class="item">
+								<dt>포인트</dt>
+								<dd>
+									<span class="point-info">
+										<i>10,000</i>
+									</span>
+									<div class="btn-area">
+										<button type="button" class="btn-base type-line"><span>충전하기</span></button>
+									</div>
+									<div class="device-info">
+										<strong>기기등록정보</strong> 4/3
+										<span class="count"> <!-- [D] 기기 개수에 따라 i태그에 on 클래스 추가 -->
+											<i class="on"></i>
+											<i class="on"></i>
+											<i class="on"></i>
+											<i></i>
+										</span>
+									</div>
+								</dd>
+							</div>
+							<div class="item">
+								<dt>말하자 멤버십</dt>
+								<dd>
+									<dl class="myinfo">
+										<div>
+											<dt>연간회원</dt>
+											<dd>2020.12.17~2021.22.22</dd>
+										</div>
+										<div>
+											<dt>연간회원</dt>
+											<dd>2020.12.17~2021.22.22</dd>
+										</div>
+										<div>
+											<dt>연간회원</dt>
+											<dd>2020.12.17~2021.22.22</dd>
+										</div>
+									</dl>
+								</dd>
+							</div>
+						</dl>
+					</div>
+
+					<div class="cont-inner">
+						<div class="ui-tab">
+							<div class="ui-tab-btns">
+								<button type="button" class="ui-tab-btn selected"><span>수강중인 강좌</span></button>
+								<button type="button" class="ui-tab-btn"><span>관심강좌</span></button>
+								<button type="button" class="ui-tab-btn"><span>수강완료 강좌</span></button>
+							</div>
+							<div class="ui-tab-pnls">
+								<div class="ui-tab-pnl">
+									<div class="class-list2">
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class2.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class4.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+									</div>
+								</div>
+								<div class="ui-tab-pnl">
+									<div class="class-list2">
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class4.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class2.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+									</div>
+								</div>
+								<div class="ui-tab-pnl">
+									<div class="class-list2">
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class2.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img">
+												<img src="./resource/img/@temp/@class4.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+												<span class="class-tag ing">수강중</span>
+											</span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- [구매한 강의안 Start]
+						<div class="class-tit3">구매한 강의안(PDF)</div>
+						<div class="class-list2">
+							<div class="item">
+								<span class="class-img">
+									<img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성">
+									<a href="#" class="class-tag download">다운로드 받기</a>
+								</span>
+								<strong>
+									구해줘 잉글리쉬
+									<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+								</strong>
+							</div>
+							<div class="item">
+								<span class="class-img">
+									<img src="./resource/img/@temp/@class2.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+									<a href="#" class="class-tag download">다운로드 받기</a>
+								</span>
+								<strong>
+									구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬
+									<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+								</strong>
+							</div>
+							<div class="item">
+								<span class="class-img">
+									<img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화">
+									<a href="#" class="class-tag download">다운로드 받기</a>
+								</span>
+								<strong>
+									구해줘 잉글리쉬
+									<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+								</strong>
+							</div>
+							<div class="item">
+								<span class="class-img">
+									<img src="./resource/img/@temp/@class4.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화">
+									<a href="#" class="class-tag download">다운로드 받기</a>
+								</span>
+								<strong>
+									구해줘 잉글리쉬
+									<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+								</strong>
+							</div>
+						</div>
+						// 구매한 강의안 End -->
+					</div>
+					
+					<div class="cont-inner type-box list">
+						<div class="class-tit type2">말하자 추천강좌</div>
+						<div class="ui-tab type2">
+							<!--
+							<div class="ui-tab-btns">
+								<button type="button" class="ui-tab-btn selected"><span>수강중인 강좌</span></button>
+								<button type="button" class="ui-tab-btn"><span>관심강좌</span></button>
+							</div>
+							-->
+							<div class="ui-tab-pnls">
+								<div class="ui-tab-pnl">
+									<div class="rdo-area type-tag">
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupA" id="rdo1" checked>
+											<label for="rdo1" class="lb-rdo"><span>#왕초보</span></label>
+										</div>
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupA" id="rdo2">
+											<label for="rdo2" class="lb-rdo"><span>#파닉스/발음</span></label>
+										</div>
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupA" id="rdo3">
+											<label for="rdo3" class="lb-rdo"><span>#여행영어</span></label>
+										</div>
+									</div>
+
+									<div class="class-list2">
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class2.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화"></span>
+											<strong>
+												구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬 구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화"></span>
+											<strong>
+												11구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성"></span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+									</div>
+								</div>
+								<div class="ui-tab-pnl">
+									<div class="rdo-area type-tag">
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupB" id="rdoB1" checked>
+											<label for="rdoB1" class="lb-rdo"><span>#왕초보</span></label>
+										</div>
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupB" id="rdoB2">
+											<label for="rdoB2" class="lb-rdo"><span>#파닉스/발음</span></label>
+										</div>
+										<div class="rdo-item">
+											<input type="radio" name="rdoGroupB" id="rdoB3">
+											<label for="rdoB3" class="lb-rdo"><span>#여행영어</span></label>
+										</div>
+									</div>
+
+									<div class="class-list2">
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class1.jpg" alt="해외여행 자신감 급상승. 배워서 바로 쓰는 상황별필수회화"></span>
+											<strong>
+												22 구해줘 잉글리쉬 22 구해줘 잉글리쉬 22 구해줘 잉글리쉬 22 구해줘 잉글리쉬 22 구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class3.jpg" alt="더 이상 억지로 외우지 마세요. #해시태그로 기초단어완성"></span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+										<div class="item">
+											<span class="class-img"><img src="./resource/img/@temp/@class4.jpg" alt="실제상황 60. 배워서 바로 쓰는 상황별필수회화"></span>
+											<strong>
+												구해줘 잉글리쉬
+												<a href="#" class="btn-more" tabindex="0"><span class="blind">더 보기</span></a>
+											</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				;(function ($, win, doc, undefined) {
+					$(doc).on('ready.olliza', function(){
+
+						
+					});
+				})(jQuery, window, document);
+			</script>
+		</section>
+		<!-- // [End] main-area -->
+		<footer class="footer-area"></footer>
+
+	</main>
+</body>
+</html>

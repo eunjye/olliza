@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="description" content="eduTV 말하자 홈페이지">
+	<meta name="keywords" content="eduTV, 말하자, eduTV 말하자, 말하자 홈페이지">
+	<meta property="og:image" content="./resource/img/logo.png">
+
+	<title>구독 멤버십 | eduTV 말하자</title>
+
+	<link rel="stylesheet" href="./resource/css/app.css">
+
+	<script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="./resource/js/lib/bluebird.min.js"></script>
+	<script src="./resource/js/lib/video.min.js"></script>
+	<script src="./resource/js/lib/slick.min.js"></script>
+	<script src="./resource/js/common.js"></script>
+
+	<style>
+		.cont-grid { padding:200px 0 100px; }
+		.btn-base { margin: 5px;}
+	</style>
+</head>
+<body class="is-home">
+	<main id="wrap">
+		<header class="header-area"></header>
+
+		<!-- [Start] main-area -->
+		<section class="main-area" id="main">
+			
+			<div class="cont-area">
+				<div class="cont-grid type2">
+					
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalA');
+					"><span>영어+중국어 년회월 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalB')
+						"><span>강의안결제 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalC')
+						"><span>강의안결제 거절 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalD')
+						"><span>강의안결제 완료 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalE')
+					"><span>포인트충전 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalF')
+					"><span>영어 월회원 결제 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalG')
+					"><span>영어 월회원 신청 팝업 호출</span></button>
+					<button type="button" class="btn-base type-line" onclick="
+						window.olliza.modal.open('modalH')
+					"><span>중국어 월회원 신청 팝업 호출</span></button>
+				</div>
+			</div>
+
+
+
+			<!-- popup start
+				================================== -->
+
+			<!-- Start : modalA-->
+			<div id="modalA" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>영어+중국어 연회원</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalA');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<span class="modal-desc">구독기간 :당일부터 12개월</span>
+						<dl class="cost-data">
+							<div>
+								<dt>상품금액</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="result">
+								<dt>결제금액</dt>
+								<dd>179,000원</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalA');">
+								<span>결제하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalA -->
+
+			<!-- Start : modalB -->
+			<div id="modalB" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>강의안결제 (포인트결제)</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalB');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<dl class="cost-data">
+							<div>
+								<dt>보유포인트</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="result">
+								<dt>결제금액</dt>
+								<dd>179,000원</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalB');">
+								<span>결제하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalB -->
+
+			<!-- Start : modalD -->
+			<div id="modalD" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>강의안결제 (포인트결제)</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalD');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<div class="modal-box">
+							<p>결제가 완료 되었습니다. </p>
+						</div>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalD');">
+								<span>확인</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalD -->
+
+			<!-- Start : modalC -->
+			<div id="modalC" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>강의안결제 (포인트결제)</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalC');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<div class="modal-box">
+							<p>포인트가부족합니다.<br>내 강의실에서포인트 충전후 결제해 주세요.</p>
+						</div>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalC');">
+								<span>확인</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalC -->
+
+			<!-- Start : modalE -->
+			<div id="modalE" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>포인트충전</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalE');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<dl class="cost-data">
+							<div>
+								<dt>보유포인트</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="result">
+								<dt>결제금액</dt>
+								<dd>179,000원</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalE');">
+								<span>결제하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalE -->
+
+			<!-- Start : modalF-->
+			<div id="modalF" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>영어 월회원</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalF');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<span class="modal-desc">구독기간 :당일부터 12개월</span>
+						<dl class="cost-data">
+							<div>
+								<dt>상품금액</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="result">
+								<dt>결제금액</dt>
+								<dd>179,000원</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalF');">
+								<span>결제하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalF -->
+
+			<!-- Start : modalG -->
+			<div id="modalG" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>영어 월회원</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalG');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<span class="modal-desc">구독기간 :당일부터 12개월</span>
+						<dl class="cost-data">
+							<div class="result">
+								<dt>상품금액</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpCardNum1"><span>카드번호</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpCardNum1" class="inp" placeholder="1234-5678-1234-5678">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpDat1"><span>유효기간</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpDat1" class="inp" placeholder="MM/YY">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpBirth1"><span>생년월일 6자리</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpBirth1" class="inp" placeholder="예) 911125">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpPW1"><span>카드 비밀번호 앞2자리</span></label>
+								</dt>
+								<dd>
+									<input type="password" id="inpPW1" class="inp" placeholder="" maxlength="2">
+								</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalG');">
+								<span>신청하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalG -->
+			
+			<!-- Start : modalH -->
+			<div id="modalH" class="ui-modal">
+				<div class="ui-modal-wrap">
+					<div class="ui-modal-head">
+						<h2>중국어 월회원</h2>
+						<button type="button" class="btn-close" onclick="window.olliza.modal.close('modalH');"><span class="blind">닫기</span></button>
+					</div>
+					<div class="ui-modal-cont">
+						<span class="modal-desc">구독기간 :당일부터 12개월</span>
+						<dl class="cost-data">
+							<div class="result">
+								<dt>상품금액</dt>
+								<dd>179,000원</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpCardNum"><span>카드번호</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpCardNum" class="inp" placeholder="1234-5678-1234-5678">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpDate"><span>유효기간</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpDate" class="inp" placeholder="MM/YY">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpBirth"><span>생년월일 6자리</span></label>
+								</dt>
+								<dd>
+									<input type="tel" id="inpBirth" class="inp" placeholder="예) 911125">
+								</dd>
+							</div>
+							<div class="form-item">
+								<dt>
+									<label for="inpPW"><span>카드 비밀번호 앞2자리</span></label>
+								</dt>
+								<dd>
+									<input type="password" id="inpPW" class="inp" placeholder="" maxlength="2">
+								</dd>
+							</div>
+						</dl>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base type2" onclick="window.olliza.modal.close('modalH');">
+								<span>신청하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // End : modalH -->
+
+
+			<!-- // popup end
+				================================== -->
+
+
+			<div class="floating-area">
+				<div class="floating-util">
+					<button type="button" class="top"><i class="blind">TOP</i></button>
+					<button type="button" class="kakao"><i class="blind">카톡 문의</i></button>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				;(function ($, win, doc, undefined) {
+					$(doc).on('ready.olliza', function(){
+
+						
+					});
+				})(jQuery, window, document);
+			</script>
+		</section>
+		<!-- // [End] main-area -->
+		<footer class="footer-area"></footer>
+
+	</main>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="description" content="eduTV 말하자 홈페이지">
+	<meta name="keywords" content="eduTV, 말하자, eduTV 말하자, 말하자 홈페이지">
+	<meta property="og:image" content="../resource/img/logo.png">
+
+	<title>내 강의실 | eduTV 말하자</title>
+
+	<link rel="stylesheet" href="../resource/css/app.css">
+
+	<script src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="../resource/js/lib/bluebird.min.js"></script>
+	<script src="../resource/js/lib/video.min.js"></script>
+	<script src="../resource/js/lib/slick.min.js"></script>
+	<script src="../resource/js/common.js"></script>
+
+	<style>
+		tr td { transition:background-color ease-in .2s }
+		tr:hover td { background:#fffab7; }
+		tr.visited td { background:#ffee00; }
+		.page-id { text-decoration:underline; }
+	</style>
+</head>
+<body class="is-home">
+	<main id="wrap">
+		<header class="header-area"></header>
+
+		<!-- [Start] main-area -->
+		<section class="main-area myclass-area" id="main">
+			
+			<div class="cont-area">
+				<div class="cont-grid">
+					<h2 class="cont-tit1">codinglist</h2>
+					<div class="cont-inner">
+						<div class="tbl-base">
+							<table>
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:15%">
+									<col style="width:15%">
+									<col style="width:10%;">
+									<col style="width:15%;">
+									<col style="width:5%;">
+									<col style="width:8%;">
+									<col style="width:8%;">
+									<col style="width:14%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="3">depth</th>
+										<th rowspan="2">형식</th>
+										<th rowspan="2">화면ID</th>
+										<th rowspan="2">완료여부</th>
+										<th rowspan="2">완료일</th>
+										<th rowspan="2">수정일</th>
+										<th rowspan="2">비고</th>
+									</tr>
+									<tr>
+										<th>1</th>
+										<th>2</th>
+										<th>3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>메인</td>
+										<td>-</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0001.html" target="_blank" class="">OL_0001</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>과목</td>
+										<td>선생님 목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0002.html" target="_blank" class="">OL_0002</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>과목</td>
+										<td>선생님 상세</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0003.html" target="_blank" class="">OL_0003</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>과목</td>
+										<td>주문 결제</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../P_OL_0004.html" target="_blank" class="">OL_0004</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>과목</td>
+										<td>주문 결제</td>
+										<td>주문 완료</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0005.html" target="_blank" class="">OL_0005</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>로그인(로그아웃)</td>
+										<td>-</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0008.html" target="_blank" class="">OL_0008</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>로그인(로그아웃)</td>
+										<td>아이디/비밀번호 찾기</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0009.html" target="_blank" class="">OL_0009</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>회원가입</td>
+										<td>-</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0010.html" target="_blank" class="">OL_0010</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>회원가입</td>
+										<td>가입완료</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0011.html" target="_blank" class="">OL_0011</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>강의 목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0012.html" target="_blank" class="">OL_0012</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>결제 내역</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0013.html" target="_blank" class="">OL_0013</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>학습 Q&A</td>
+										<td>목록</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0014.html" target="_blank" class="">OL_0014</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>학습 Q&A</td>
+										<td>상세</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0015.html" target="_blank" class="">OL_0015</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>학습 Q&A</td>
+										<td>등록/수정</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0016.html" target="_blank" class="">OL_0016</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (학생)</td>
+										<td>회원정보변경</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0020.html" target="_blank" class="">OL_0020</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (강사)</td>
+										<td>강의 목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0021.html" target="_blank" class="">OL_0021</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+									<tr>
+										<td>마이페이지 (강사)</td>
+										<td>학습 Q&A</td>
+										<td>목록</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0023.html" target="_blank" class="">OL_0023</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (강사)</td>
+										<td>학습 Q&A</td>
+										<td>답변 등록</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0024.html" target="_blank" class="">OL_0024</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (강사)</td>
+										<td>학습 Q&A</td>
+										<td>답변 수정</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0025.html" target="_blank" class="">OL_0025</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>마이페이지 (강사)</td>
+										<td>선생님정보변경</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0028.html" target="_blank" class="">OL_0028</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>올리자 소개</td>
+										<td>-</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0029.html" target="_blank" class="">OL_0029</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>공지사항</td>
+										<td>목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0030.html" target="_blank" class="">OL_0030</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>공지사항</td>
+										<td>상세</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0031.html" target="_blank" class="">OL_0031</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>자주하는 질문</td>
+										<td>목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0032.html" target="_blank" class="">OL_0032</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>자주하는 질문</td>
+										<td>상세</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0033.html" target="_blank" class="">OL_0033</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>학습 Q&A</td>
+										<td>목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0050.html" target="_blank" class="">OL_0050</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>학습 Q&A</td>
+										<td>답변 등록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0051.html" target="_blank" class="">OL_0051</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>학습 Q&A</td>
+										<td>답변 수정</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0052.html" target="_blank" class="">OL_0052</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>수강후기</td>
+										<td>목록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0060.html" target="_blank" class="">OL_0060</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>수강후기</td>
+										<td>답변 등록</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0061.html" target="_blank" class="">OL_0061</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>수강후기</td>
+										<td>답변 수정</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0062.html" target="_blank" class="">OL_0062</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>상담신청</td>
+										<td>등록</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0034.html" target="_blank" class="">OL_0034</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>선생님 지원하기</td>
+										<td>등록</td>
+										<td>-</td>
+										<td>팝업</td>
+										<td class="page-id"><a href="../P_OL_0038.html" target="_blank" class="">OL_0038</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>이용약관</td>
+										<td>-</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0040.html" target="_blank" class="">OL_0040</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>개인정보취급방침</td>
+										<td>-</td>
+										<td>-</td>
+										<td>페이지</td>
+										<td class="page-id"><a href="../OL_0041.html" target="_blank" class="">OL_0041</a></td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+            
+					</div>
+				</div>
+			</div>
+
+
+			<script type="text/javascript">
+				;(function ($, win, doc, undefined) {
+					$(doc).on('ready.olliza', function(){
+
+
+						$('td a').on('click', function(){
+							$('tr.visited').removeClass('visited');
+							$(this).closest('tr').addClass('visited');
+						})
+						
+					});
+				})(jQuery, window, document);
+			</script>
+		</section>
+		<!-- // [End] main-area -->
+		<footer class="footer-area"></footer>
+
+	</main>
+</body>
+</html>
