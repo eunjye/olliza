@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 말하자 홈페이지">
+  <meta name="keywords" content="eduTV, 말하자, eduTV 말하자, 말하자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>animation | eduTV 말하자</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+    <!-- <header class="header-area"></header> -->
+
+    <!-- [Start] main-area -->
+    <section class="main-area myclass-area" id="main">
+
+      <div class="cont-area">
+        <div class="cont-grid">
+          <h2 class="cont-tit1">animation</h2>
+          <div class="cont-inner">
+
+            <div class="graph-area">
+              <canvas id="canvasGraph">
+
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        ;
+        (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+            var canvas = document.querySelector('#canvasGraph');
+            var ctx = canvas.getContext('2d');
+            canvas.width = 240;
+            canvas.height = 240;
+
+            var size = 0;
+            var degree = (Math.PI * 2) / 5;
+            
+            function drawPentagon(){
+              ctx.beginPath();
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+              ctx.save();
+              ctx.translate(120, 120);
+              ctx.rotate(-Math.PI / 2);
+              ctx.moveTo(size, 0);
+
+              var beforeOffset = {
+                  x: size,
+                  y: 0
+                };
+              for (var i = 1; i <= 5; i++) {
+                ctx.beginPath();
+                ctx.moveTo(beforeOffset.x, beforeOffset.y);
+                ctx.lineTo(size * Math.cos(degree * i), size * Math.sin(degree * i));
+                ctx.lineWidth = 4;
+                switch(i) {
+                  case 1: 
+                    ctx.strokeStyle = 'purple';
+                    break;
+                  case 2: 
+                    ctx.strokeStyle = 'red';
+                    break;
+                  case 3: 
+                    ctx.strokeStyle = 'blue';
+                    break;
+                  case 4: 
+                    ctx.strokeStyle = 'yellow';
+                    break;
+                  case 5: 
+                    ctx.strokeStyle = 'black';
+                    break;
+                }
+
+                beforeOffset = {
+                  x: size * Math.cos(degree * i),
+                  y: size * Math.sin(degree * i)
+                }
+
+                ctx.stroke();
+                ctx.closePath();
+              }
+
+              ctx.fillStyle = 'white';
+              ctx.fill();
+              
+              // ctx.shadowColor = 'purple';
+              // ctx.shadowBlur = 5;
+
+              ctx.restore();
+
+              if (size < 60){
+                size += 4;
+                requestAnimationFrame(drawPentagon);
+              } else if (size < 80) {
+                size += 3;
+                requestAnimationFrame(drawPentagon);
+              } else if (size < 90) {
+                size += 2;
+                requestAnimationFrame(drawPentagon);
+              } else {
+                cancelAnimationFrame(drawPentagon);
+                // canvas.classList.add('done');
+                drawCircle();
+              }
+
+                
+            }
+            
+            var dotOrder = 1;
+            var dotSize = 0;
+            function drawCircle() {
+
+              ctx.save();
+              ctx.translate(120, 120);
+              ctx.rotate(-Math.PI / 2);
+              ctx.moveTo(size, 0);
+
+
+              ctx.beginPath();
+              ctx.fillStyle = 'purple';
+              ctx.strokeStyle = '#fff';
+              ctx.lineWidth = 2;
+              ctx.shadowBlur = false;
+              ctx.arc(Math.cos(degree * dotOrder), Math.sin(degree * dotOrder), dotSize, 0, Math.PI * 2);
+              ctx.fill();
+              ctx.stroke();
+
+              console.log(size, dotOrder);
+
+              if (dotSize < 200) {
+                dotSize++;
+
+                requestAnimationFrame(drawCircle);
+              } else if (dotOrder <= 4) {
+                dotSize = 0;
+                dotOrder++;
+                requestAnimationFrame(drawCircle);
+              } else {
+                cancelAnimationFrame(drawCircle);
+              }
+            }
+
+            drawPentagon();
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <!-- <footer class="footer-area"></footer> -->
+
+    <div class="dialog-area" id="dialog1">
+      <div class="dialog-head">
+        <div class="dialog-tit">
+          <h2 class="tit"><span>Dialog Title Dialog Title</span></h2>
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-cont">
+          <p>Dialog Content Dialog Content <br>Dialog Content Dialog Content <br>Dialog Content Dialog Content
+            <br>Dialog Content Dialog Content<br>Dialog Content Dialog Content <br>Dialog Content Dialog
+            Content<br>Dialog Content</p>
+        </div>
+
+      </div>
+      <button type="button" class="btn-close dialog-close-btn"><span>닫기</span></button>
+    </div>
+  </main>
+</body>
+
+</html>
