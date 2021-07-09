@@ -412,12 +412,13 @@
 				var option = $targetDialog.data('dialogOption');
 				var $targetDim = $targetDialog.closest('.dialog-dim');
 
-				$targetDim.removeClass('show');
+				$targetDim.removeClass('showing');
 				
 				setTimeout(function(){
 					if (!!option.removeTag) {
 						$targetDim.remove();
 					} else {
+						$targetDim.removeClass('show');
 						$targetDim.hide();
 					}
 
@@ -459,6 +460,8 @@
 					}
 
 					var $dialogDim = $dialogWrap.closest('.dialog-dim');
+					
+					$dialogDim.addClass('showing');
 
 					$dialogDim.css('z-index', 10 + activeLength).addClass('show ' + option.position).show();
 					$dialogWrap.attr('data-dialog-id', dialogId).data('dialogOption', option);

@@ -31,16 +31,32 @@
 
     <!-- [Start] main-area -->
     <section class="main-area myclass-area" id="main">
+      <div class="visual-area main">
+        <div class="visual-inner">
+          <!-- [Start] slider -->
+          <div class="slider-area slider-visual">
+            <div class="slider-inner">
+              <div class="slide" style="background-image:url('./resource/img/bg.jpg');"></div>
+              <div class="slide" style="background-image:url('./resource/img/bg.jpg');"></div>
+              <div class="slide" style="background-image:url('./resource/img/bg.jpg');"></div>
+              <div class="slide" style="background-image:url('./resource/img/bg.jpg');"></div>
+            </div>
+          </div>
+          <div class="slider-pagination type-num">
+            <button type="button" class="btn-rolling pause"><span class="blind">멈춤</span></button>
+          </div>
+          <!-- // [End] slider -->
+
+        </div>
+      </div>
 
       <div class="cont-area">
         <div class="cont-grid">
           <h2 class="cont-tit1">animation</h2>
           <div class="cont-inner">
 
-            <div class="graph-area">
-              <canvas id="canvasGraph">
-
-              </canvas>
+            <div class="graph-area" style="background:#000">
+              <canvas id="canvasGraph"></canvas>
             </div>
           </div>
         </div>
@@ -50,120 +66,146 @@
         ;
         (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
+            olliza.mainSlider.init();
 
-            var canvas = document.querySelector('#canvasGraph');
-            var ctx = canvas.getContext('2d');
-            canvas.width = 240;
-            canvas.height = 240;
+            initCanvas();
 
-            var size = 0;
-            var degree = (Math.PI * 2) / 5;
-            
-            function drawPentagon(){
-              ctx.beginPath();
-              ctx.clearRect(0, 0, canvas.width, canvas.height);
-              ctx.save();
-              ctx.translate(120, 120);
-              ctx.rotate(-Math.PI / 2);
-              ctx.moveTo(size, 0);
+            function initCanvas() {
+              var canvas = document.querySelector('#canvasGraph');
+              var ctx = canvas.getContext('2d');
+              canvas.width = 300;
+              canvas.height = 300;
 
-              var beforeOffset = {
-                  x: size,
-                  y: 0
-                };
-              for (var i = 1; i <= 5; i++) {
+              var size = 0;
+              var distance = 50;
+              var zeroPoint = {
+                x: 150,
+                y: 150
+              }
+              var degree = (Math.PI * 2) / 5;
+
+              function drawPentagon() {
                 ctx.beginPath();
-                ctx.moveTo(beforeOffset.x, beforeOffset.y);
-                ctx.lineTo(size * Math.cos(degree * i), size * Math.sin(degree * i));
-                ctx.lineWidth = 4;
-                switch(i) {
-                  case 1: 
-                    ctx.strokeStyle = 'purple';
-                    break;
-                  case 2: 
-                    ctx.strokeStyle = 'red';
-                    break;
-                  case 3: 
-                    ctx.strokeStyle = 'blue';
-                    break;
-                  case 4: 
-                    ctx.strokeStyle = 'yellow';
-                    break;
-                  case 5: 
-                    ctx.strokeStyle = 'black';
-                    break;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.save();
+                ctx.translate(zeroPoint.x, zeroPoint.y);
+                ctx.rotate(-Math.PI / 2);
+                ctx.moveTo(size, 0);
+
+                var beforeOffset = {
+                  x: size,
+                  y: 0,
+
+                  x2: size + distance,
+                  y2: 0
+                };
+                for (var i = 1; i <= 5; i++) {
+                  ctx.beginPath();
+                  ctx.moveTo(beforeOffset.x, beforeOffset.y);
+                  ctx.lineTo(size * Math.cos(degree * i), size * Math.sin(degree * i));
+                  ctx.lineWidth = 30;
+                  switch (i) {
+                    case 1:
+                      ctx.strokeStyle = 'purple';
+                      break;
+                    case 2:
+                      ctx.strokeStyle = 'red';
+                      break;
+                    case 3:
+                      ctx.strokeStyle = 'blue';
+                      break;
+                    case 4:
+                      ctx.strokeStyle = 'yellow';
+                      break;
+                    case 5:
+                      ctx.strokeStyle = 'green';
+                      break;
+                  }
+
+                  ctx.stroke();
+                  ctx.closePath();
+
+
+                  ctx.beginPath();
+                  ctx.moveTo(beforeOffset.x2, beforeOffset.y2);
+                  ctx.lineTo((size + distance) * Math.cos(degree * i), (size + distance) * Math.sin(degree * i));
+                  ctx.lineWidth = 1;
+                  ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+                  ctx.stroke();
+                  ctx.closePath();
+
+                  beforeOffset = {
+                    x: size * Math.cos(degree * i),
+                    y: size * Math.sin(degree * i),
+
+                    x2: (size + distance) * Math.cos(degree * i),
+                    y2: (size + distance) * Math.sin(degree * i)
+                  }
                 }
 
-                beforeOffset = {
-                  x: size * Math.cos(degree * i),
-                  y: size * Math.sin(degree * i)
+                ctx.fillStyle = 'white';
+                ctx.fill();
+
+                // ctx.shadowColor = 'purple';
+                // ctx.shadowBlur = 5;
+
+                ctx.restore();
+
+                if (size < 60) {
+                  size += 4;
+                  requestAnimationFrame(drawPentagon);
+                } else if (size < 80) {
+                  size += 3;
+                  requestAnimationFrame(drawPentagon);
+                } else if (size < 90) {
+                  size += 2;
+                  requestAnimationFrame(drawPentagon);
+                } else {
+                  cancelAnimationFrame(drawPentagon);
+                  // canvas.classList.add('done');
+                  drawCircle();
                 }
 
+
+              }
+
+              var dotOrder = 1;
+              var dotAlpha = 0;
+
+              function drawCircle() {
+
+                ctx.save();
+                ctx.translate(zeroPoint.x, zeroPoint.y);
+                ctx.rotate(-Math.PI / 2);
+
+                ctx.beginPath();
+                ctx.globalAlpha = dotAlpha;
+                ctx.fillStyle = '#fff';
+                ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+                ctx.lineWidth = 10;
+                ctx.shadowBlur = false;
+                ctx.arc(size * Math.cos(degree * dotOrder), size * Math.sin(degree * dotOrder), 20, 0, Math.PI *
+                  2);
                 ctx.stroke();
-                ctx.closePath();
+                ctx.fill();
+
+                ctx.restore();
+
+                if (dotAlpha <= 5 / 10) {
+                  dotAlpha += 1 / 20;
+                  requestAnimationFrame(drawCircle);
+                } else if (dotOrder <= 4) {
+                  dotAlpha = 0;
+                  dotOrder++;
+                  requestAnimationFrame(drawCircle);
+                } else {
+                  cancelAnimationFrame(drawCircle);
+                }
               }
 
-              ctx.fillStyle = 'white';
-              ctx.fill();
-              
-              // ctx.shadowColor = 'purple';
-              // ctx.shadowBlur = 5;
+              drawPentagon();
 
-              ctx.restore();
-
-              if (size < 60){
-                size += 4;
-                requestAnimationFrame(drawPentagon);
-              } else if (size < 80) {
-                size += 3;
-                requestAnimationFrame(drawPentagon);
-              } else if (size < 90) {
-                size += 2;
-                requestAnimationFrame(drawPentagon);
-              } else {
-                cancelAnimationFrame(drawPentagon);
-                // canvas.classList.add('done');
-                drawCircle();
-              }
-
-                
             }
-            
-            var dotOrder = 1;
-            var dotSize = 0;
-            function drawCircle() {
-
-              ctx.save();
-              ctx.translate(120, 120);
-              ctx.rotate(-Math.PI / 2);
-              ctx.moveTo(size, 0);
-
-
-              ctx.beginPath();
-              ctx.fillStyle = 'purple';
-              ctx.strokeStyle = '#fff';
-              ctx.lineWidth = 2;
-              ctx.shadowBlur = false;
-              ctx.arc(Math.cos(degree * dotOrder), Math.sin(degree * dotOrder), dotSize, 0, Math.PI * 2);
-              ctx.fill();
-              ctx.stroke();
-
-              console.log(size, dotOrder);
-
-              if (dotSize < 200) {
-                dotSize++;
-
-                requestAnimationFrame(drawCircle);
-              } else if (dotOrder <= 4) {
-                dotSize = 0;
-                dotOrder++;
-                requestAnimationFrame(drawCircle);
-              } else {
-                cancelAnimationFrame(drawCircle);
-              }
-            }
-
-            drawPentagon();
 
           });
         })(jQuery, window, document);
