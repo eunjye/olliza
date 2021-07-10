@@ -474,6 +474,143 @@
 				}
 			}
 		},
+		initCanvas: function() {
+			var canvas = document.querySelector('#canvasGraph');
+			var ctx = canvas.getContext('2d');
+
+			var size = 0;
+			var distance = 100;
+			var zeroPoint = {
+				x: 320,
+				y: 330
+			}
+			var degree = (Math.PI * 2) / 5;
+
+			function drawPentagon() {
+				ctx.beginPath();
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				ctx.save();
+				ctx.translate(zeroPoint.x, zeroPoint.y);
+				ctx.rotate(-Math.PI / 2);
+				ctx.moveTo(size, 0);
+
+				var beforeOffset = {
+					x: size,
+					y: 0,
+
+					x2: size + distance,
+					y2: 0
+				};
+				for (var i = 1; i <= 5; i++) {
+					ctx.beginPath();
+					ctx.moveTo(beforeOffset.x, beforeOffset.y);
+					ctx.lineTo(size * Math.cos(degree * i), size * Math.sin(degree * i));
+					ctx.lineWidth = 70;
+					switch (i) {
+						case 1:
+							ctx.strokeStyle = '#f377e6';
+							break;
+						case 2:
+							ctx.strokeStyle = '#6957d0';
+							break;
+						case 3:
+							ctx.strokeStyle = '#57b7d0';
+							break;
+						case 4:
+							ctx.strokeStyle = '#b77cf0';
+							break;
+						case 5:
+							ctx.strokeStyle = '#579dd0';
+							break;
+					}
+
+					ctx.stroke();
+					ctx.closePath();
+
+
+					// ctx.beginPath();
+					// ctx.moveTo(beforeOffset.x2, beforeOffset.y2);
+					// ctx.lineTo((size + distance) * Math.cos(degree * i), (size + distance) * Math.sin(degree * i));
+					// ctx.lineWidth = 1;
+					// ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+					// ctx.stroke();
+					// ctx.closePath();
+
+					beforeOffset = {
+						x: size * Math.cos(degree * i),
+						y: size * Math.sin(degree * i),
+
+						x2: (size + distance) * Math.cos(degree * i),
+						y2: (size + distance) * Math.sin(degree * i)
+					}
+				}
+
+				ctx.fillStyle = 'white';
+				ctx.fill();
+
+				ctx.restore();
+
+				var maxSize = 230;
+
+				if (size < maxSize - 30) {
+					size += 4;
+					requestAnimationFrame(drawPentagon);
+				} else if (size < maxSize - 10) {
+					size += 3;
+					requestAnimationFrame(drawPentagon);
+				} else if (size < maxSize) {
+					size += 2;
+					requestAnimationFrame(drawPentagon);
+				} else {
+					cancelAnimationFrame(drawPentagon);
+					drawCircle();
+				}
+
+			}
+
+			var dotOrder = 0;
+			var dotAlpha = 0;
+
+			function drawCircle() {
+
+				ctx.save();
+				ctx.translate(zeroPoint.x, zeroPoint.y);
+				ctx.rotate(-Math.PI / 2);
+
+				var arrDotOrder = [5, 1, 2, 3, 4];
+
+				ctx.beginPath();
+				ctx.globalAlpha = dotAlpha;
+				ctx.fillStyle = '#fff';
+				ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+				ctx.lineWidth = 24;
+				ctx.shadowBlur = false;
+				ctx.arc(size * Math.cos(degree * arrDotOrder[dotOrder]), size * Math.sin(degree * arrDotOrder[dotOrder]), 50, 0, Math.PI * 2);
+				ctx.stroke();
+				ctx.fill();
+
+				ctx.restore();
+
+				if (dotAlpha <= 1/2) {
+					dotAlpha += 1/20;
+					requestAnimationFrame(drawCircle);
+				} else if (dotOrder < 4) {
+					dotAlpha = 0;
+					
+					setTimeout(function(){
+						dotOrder++;
+						requestAnimationFrame(drawCircle);
+					}, 250);
+				} else {
+					cancelAnimationFrame(drawCircle);
+					$('.graph-area').addClass('done');
+				}
+			}
+
+			drawPentagon();
+
+		},
+
 		init: function(){
 
 			$(win).off('.'+namespace)

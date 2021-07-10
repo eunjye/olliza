@@ -55,38 +55,18 @@
 			url('../font/NotoSans-Black.ttf') format('truetype');
 }
 @font-face{ 
-	font-family:'GmarketSans';
-	font-weight:300;
-	src:url('../font/GmarketSansLight.woff2') format('woff2'), 
-			url('../font/GmarketSansLight.woff') format('woff');
-}
-@font-face{ 
-	font-family:'GmarketSans';
+	font-family:'Elice';
 	font-weight:400;
-	src:url('../font/GmarketSansMedium.woff2') format('woff2'), 
-			url('../font/GmarketSansMedium.woff') format('woff');
+	src:url('../font/EliceDigitalBaeum_Regular.eot');
+	src:url('../font/EliceDigitalBaeum_Regular.eot?#iefix') format('embedded-opentype'), 
+			url('../font/EliceDigitalBaeum_Regular.woff2') format('woff2'), 
+			url('../font/EliceDigitalBaeum_Regular.woff') format('woff');
 }
 @font-face{ 
-	font-family:'GmarketSans';
+	font-family:'Elice';
 	font-weight:700;
-	src:url('../font/GmarketSansBold.woff2') format('woff2'), 
-			url('../font/GmarketSansBold.woff') format('woff');
-}
-@font-face{ 
-	font-family:'scdream';
-	font-weight:400;
-	src:url('../font/scdream5-webfont.woff2') format('woff2'), 
-			url('../font/scdream5-webfont.woff') format('woff');
-}
-@font-face{ 
-	font-family:'scdream';
-	font-weight:700;
-	src:url('../font/scdream7-webfont.woff2') format('woff2'), 
-			url('../font/scdream7-webfont.woff') format('woff');
-}
-@font-face{ 
-	font-family:'scdream';
-	font-weight:800;
-	src:url('../font/scdream9-webfont.woff2') format('woff2'), 
-			url('../font/scdream9-webfont.woff') format('woff');
+	src:url('../font/EliceDigitalBaeum_Bold.eot');
+	src:url('../font/EliceDigitalBaeum_Bold.eot?#iefix') format('embedded-opentype'), 
+			url('../font/EliceDigitalBaeum_Bold.woff2') format('woff2'), 
+			url('../font/EliceDigitalBaeum_Bold.woff') format('woff');
 }
