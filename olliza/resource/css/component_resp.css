@@ -20,7 +20,6 @@
 	.br { display:none; }
 
 	/* button */
-	.btn-base { height:50px; padding:0 20px; line-height:53px; font-size:14px; }
 	.btn-close { width:40px; height:40px; }
 
 	.cont-grid { padding:12% 5%; }
