@@ -55,9 +55,57 @@
           <h2 class="cont-tit1">animation</h2>
           <div class="cont-inner">
 
+
+
+
+            안녕하세요,
+            KB캐피탈 디지털사업부 퍼블리셔 채용에 지원한 은지혜입니다.
+            
+            
+            요청해주신 사전자료를 다음과 같은 첨부파일명으로 제출합니다.
+            
+            
+            
+            
+            1. 2020년도 원천징수 영수증
+            1.원천징수영수증_2020년_은지혜.pdf
+            
+            
+            2. 2021년 연봉계약 내역 (2021년 근로계약서로 제출합니다.)
+            2.근로계약서_2021년_은지혜.pdf
+            
+            
+            3. 최근 3개월 급여 명세서
+            3.급여명세서_은지혜.pdf
+            
+            
+            4. 재직증명서
+            4.재직증명서_은지혜.pdf
+            
+            
+            
+            
+            감사합니다.
+            
+            
+            ======================
+            은지혜
+            tel : 010-5758-4209
+            mail : eunjh1220@naver.com
+            ======================
+            
+            
             <div class="graph-area" style="background:#000">
               <canvas id="canvasGraph"></canvas>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cont-area">
+        <div class="cont-grid">
+          <div class="cont-inner">
+            <canvas id="canvasCurve"></canvas>
           </div>
         </div>
       </div>
@@ -66,6 +114,64 @@
         ;
         (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
+
+
+
+            var arrDotOffset1 = [
+              [330, 107, 409, 136, 430, 207],
+              [447, 266, 541, 231, 543, 294],
+              [546, 401, 389, 434, 366, 375],
+              [343, 315, 308, 253, 247, 224],
+              [214, 208, 247, 172, 295, 130]
+            ]
+            
+            var arrDotOffset2 = [
+              [345, 77, 439, 163, 494, 212],
+              [531, 245, 477, 273, 485, 335],
+              [491, 383, 416, 417, 366, 379],
+              [309, 335, 343, 290, 324, 248],
+              [309, 215, 253, 215, 294, 147]
+            ]
+
+            var dot1Count = 300;
+            var timer;
+            initCanvas2(arrDotOffset1);
+
+            function initCanvas2(arrDotOffset) {
+              var canvas = document.querySelector('#canvasCurve');
+              var ctx = canvas.getContext('2d');
+              canvas.width = 1000;
+              canvas.height = 1000;
+
+              var xoff = 20;
+              var yoff = 20;
+              var startPoint = [arrDotOffset1[arrDotOffset1.length - 1][4], arrDotOffset1[arrDotOffset1.length - 1][5]]
+
+              ctx.beginPath();
+              ctx.moveTo(startPoint[0], startPoint[1]);
+              arrDotOffset.forEach(function (item, idx) {
+                ctx.bezierCurveTo(item[0], item[1], item[2], item[3], item[4], item[5]);
+              })
+              ctx.fillStyle = 'rgba(255,150,10,.4)'
+              ctx.fill();
+
+              if (dot1Count > 0) {
+                dot1Count--;
+                timer = requestAnimationFrame(function(){
+                  initCanvas2(arrDotOffset);
+                });
+              } else {
+                
+                timer = requestAnimationFrame(function(){
+                  initCanvas2(arrDotOffset1);
+                });
+              }
+            }
+
+
+
+
+
             olliza.mainSlider.init();
 
             initCanvas();
