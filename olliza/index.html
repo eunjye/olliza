@@ -25,10 +25,54 @@
 </head>
 <body class="is-home">
 	<main id="wrap">
+		<div class="banner-area">
+			<div class="banner-inner">
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner1.jpg" alt="스마트 교육재단 EDU TV">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner2.jpg" alt="영어, 중국어, 기초어학 말하자">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner3.jpg" alt="TERASTUDY 교육뉴스">
+					</a>
+				</span>
+			</div>
+			<button type="button" class="btn-toggle"><span class="blind">열고 닫기</span></button>
+		</div>
+		
+		<div class="slider-area slider-banner">
+			<div class="slider-inner banner-inner">
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner1.jpg" alt="스마트 교육재단 EDU TV">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner2.jpg" alt="영어, 중국어, 기초어학 말하자">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/olliza/resource/img/banner3.jpg" alt="TERASTUDY 교육뉴스">
+					</a>
+				</span>
+			</div>
+			<button type="button" class="btn-toggle"><span class="blind">열고 닫기</span></button>
+		</div>
+
 		<header class="header-area"></header>
 
 		<!-- [Start] main-area -->
 		<section class="main-area" id="main">
+				
+			
 			<div class="visual-area main">
 				<div class="visual-inner">
 					<!-- [Start] slider -->
@@ -83,7 +127,7 @@
 					</div>
 					<div class="tab-btns">
 						<div>
-							<button type="button" class="btn-base type-line active"><span>영어</span></button>
+							<button type="button" class="btn-base type-line active"><span>영어</span></button> <!-- [D] 활성화 시, .active 클래스 추가 -->
 						</div>
 						<div>
 							<button type="button" class="btn-base type-line"><span>수학</span></button>
@@ -385,28 +429,28 @@
 								<li class="n2">
 									<span class="num">둘!</span>
 									<div class="box">
-										<p>학습 Q&A를 통해 <br class="only-pc">언제든 선생님께 물어볼 수 있어요.</p>
+										<p>학습 Q&A를 통해 <br class="only-pc">오답,취약개념을 물어볼 수 있어요.</p>
 										<p class="point">실시간 양방향 LIVE수업</p>
 									</div>
 								</li>
 								<li class="n3">
 									<span class="num">셋!</span>
 									<div class="box">
-										<p>올리자는 철저히  검증된 선생님들로 <br class="only-pc">100% 학생중심으로만 매칭을 해드려요.</p>
+										<p>올리자는 철저히  검증된 선생님들로만 채용해요.</p>
 										<p class="point">수업 후 당일 학부모 카톡 피드백</p>
 									</div>
 								</li>
 								<li class="n4">
 									<span class="num">넷!</span>
 									<div class="box">
-										<p>월별 테스트와 상담으로 <br class="only-pc">지속적인 컨설팅을 해드려요.</p>
+										<p>월별 테스트, 성적으로 <br class="only-pc">학습로드맵을 제시해드려요.</p>
 										<p class="point">월별 테스트, 성적 제공</p>
 									</div>
 								</li>
 								<li class="n5">
 									<span class="num">다섯!</span>
 									<div class="box">
-										<p>학생과 1:1 맞춤 컨설팅으로 최적의 <br class="only-pc">학습로드맵을 알려드려요.</p>
+										<p>제공받은 성적을 바탕으로 성적 분석 및 진로상담을 받을 수 있어요.</p>
 										<p class="point">제공받은 성적으로 <br class="only-pc">성적 코칭, 진로코칭, 생활코칭 </p>
 									</div>
 								</li>
@@ -698,8 +742,12 @@
 							<div class="cont">
 								<p>학습상담, 진로상담! <strong>올리자와 함께하면 해결됩니다!</strong></p>
 								<div class="btn-area">
-									<span class="info">답변시간 : 평일 09:00~18:00</span>
-									<a href="#" class="btn-link"><span>바로가기</span></a>
+									<div>
+										<span class="info">답변시간 : 평일 09:00~18:00</span>
+									</div>
+									<div>
+										<a href="#" class="btn-link"><span>바로가기</span></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -708,8 +756,12 @@
 							<div class="cont">
 								<p>올리자 관련 상담문의! <strong>빠르게 회신 드립니다.</strong></p>
 								<div class="btn-area">
-									<span class="info">답변시간 : 평일 09:00~18:00</span>
-									<a href="#" class="btn-link"><span>바로가기</span></a>
+									<div>
+										<span class="info">답변시간 : 평일 09:00~18:00</span>
+									</div>
+									<div>
+										<a href="#" class="btn-link"><span>바로가기</span></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -723,6 +775,43 @@
 				;(function ($, win, doc, undefined) {
 					$(doc).on('ready.olliza', function(){
 						olliza.mainSlider.init();
+						olliza.navFixed.init();
+
+						
+						$('.btn-toggle').off('click.btnToggle').on('click.btnToggle', function(){
+							var $wrap = $('.banner-area, .slider-banner');
+							var $banners = $wrap.find('.banner-inner');
+							var $btn = $(this);
+
+							if ($wrap.hasClass('close')) {
+								$wrap.attr('data-close', 'false');
+								$wrap.removeClass('close');
+								$banners.slideDown(200, function(){
+
+								});
+								$btn.removeClass('close');
+							} else {
+								$wrap.attr('data-close', 'true');
+								$banners.slideUp(200, function(){
+									$wrap.addClass('close');
+								});
+								$btn.addClass('close');
+							}
+						})
+						
+						$('.slider-banner .slider-inner').slick({
+							infinite: true,
+							speed: 400,
+							autoplay: true,
+							autoplaySpeed: 3000,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							prevArrow: $('.news .slick-prev'),
+							nextArrow: $('.news .slick-next'),
+							pauseOnHover: false,
+							dots: false,
+						});
+
 
 						var canvasFlag = false;
 
