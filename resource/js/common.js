@@ -582,13 +582,13 @@
 				var maxSize = 230;
 
 				if (size < maxSize - 30) {
-					size += 4;
+					size += 7;
 					requestAnimationFrame(drawPentagon);
 				} else if (size < maxSize - 10) {
-					size += 3;
+					size += 5;
 					requestAnimationFrame(drawPentagon);
 				} else if (size < maxSize) {
-					size += 2;
+					size += 4;
 					requestAnimationFrame(drawPentagon);
 				} else {
 					cancelAnimationFrame(drawPentagon);
@@ -629,7 +629,7 @@
 					setTimeout(function(){
 						dotOrder++;
 						requestAnimationFrame(drawCircle);
-					}, 250);
+					}, 150);
 				} else {
 					cancelAnimationFrame(drawCircle);
 					$('.graph-area').addClass('done');
