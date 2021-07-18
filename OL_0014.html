@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+
+			<div class="category-area student qna">
+				<div class="cont-grid">
+					<h2 class="tit">홍길동</h2>
+					<span class="menu">과제 / 학습 Q&A</span>
+				</div>
+			</div>
+
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					<div class="lnb-area">
+						<ul class="lnb-list">
+							<li class="list">
+								<a href="#"><span>강의목록</span></a>
+							</li>
+							<li class="qna current">
+								<a href="#"><span>과제 / 학습<br>Q&A</span></a>
+							</li>
+							<li class="edit">
+								<a href="#"><span>회원정보<br>수정</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cont-inner">
+						<div class="search-area">
+							<div class="search-inner">
+								<div class="select-area">
+									<select class="select">
+										<option value="">전체보기</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
+								</div>
+								<div class="search-inp">
+									<input type="text" class="inp size-s" placeholder="제목/내용 입력" title="제목/내용 입력">
+								</div>
+								<div class="search-btns">
+									<button type="button" class="btn-base sub2 size-s"><span>초기화</span></button>
+									<button type="button" class="btn-base sub3 size-s"><span>조회</span></button>
+								</div>
+								<div class="utils">
+									<button type="button" class="btn-base sub size-s"><span>문의하기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="bbs-area">
+							<div class="bbs-upper">
+								<ul>
+									<li class="num">번호</li>
+									<li class="subject">제목</li>
+									<li class="author">작성자</li>
+									<li class="date">등록일</li>
+									<li class="status">상태</li>
+								</ul>
+							</div>
+							<ul class="bbs-list type-qna">
+								<!-- [Start]] 내역 없을 시 -->
+								<li class="item nodata2">
+									<p>내역이 없습니다.</p>
+								</li>
+								<!-- // [End] 내역 없을 시 -->
+	
+								<li class="item is-lock"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">100</strong>
+										<span class="subject"><span>선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요</span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+											<span class="status">답변대기</span>
+										</div>
+									</a>
+								</li>
+								<li class="item is-lock"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">98</strong>
+										<span class="subject"><span>선생님 덕분에 수학에 흥미를 놓치지 않았어요</span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+											<span class="status">답변대기</span>
+										</div>
+									</a>
+								</li>
+								<li class="item is-lock"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">91</strong>
+										<span class="subject"><span>선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요</span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+											<span class="status">답변대기</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- [S] paging -->
+							<div class="paging-area">
+								<a href="#" class="btn-jump first disabled"><span>처음 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<a href="#" class="btn-jump prev disabled"><span>이전 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<div class="paging-link">
+									<a href="#" class="current"><span>1</span></a> <!-- [D] 현재 페이징에 current 클래스 추가 -->
+									<a href="#"><span>2</span></a>
+									<a href="#"><span>3</span></a>
+									<a href="#"><span>4</span></a>
+									<a href="#"><span>5</span></a>
+									<a href="#"><span>6</span></a>
+									<a href="#"><span>7</span></a>
+									<a href="#"><span>8</span></a>
+									<a href="#"><span>9</span></a>
+									<a href="#"><span>10</span></a>
+								</div>
+								<div class="paging-fraction">
+									<span class="current">1</span>
+									<i>/</i>
+									<span class="all">5</span>
+								</div>
+								<a href="#" class="btn-jump next"><span>다음 페이지</span></a>
+								<a href="#" class="btn-jump last"><span>마지막 페이지</span></a>
+	
+								<button type="button" class="btn-more-view2"><span>더 보기</span></button>
+							</div>
+							<!-- // [E] paging -->
+						</div>
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>

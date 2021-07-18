@@ -73,6 +73,7 @@
 			beforeY: false,
 			afterY: false,
 			init: function(){
+				$('.header-area').removeClass('fixed');
 				$(win).off('scroll.scrollNavFixed').on('scroll.scrollNavFixed', function(){
 					var $header = $('.header-area');
 					var $banner = ($(win).outerWidth() > 500) ? $('.banner-area') : $('.slider-banner')
@@ -669,6 +670,7 @@
 				win[namespace].nav.slidingMenu(); // show/hide evt on nav
 				win[namespace].nav.openDepth2(); // 2depth links evt on nav
 
+				$('.header-area').addClass('fixed');
 				
         $(doc).on('click', '.btn-top', function () {
           $('body, html').animate({

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+
+			<div class="category-area student list">
+				<div class="cont-grid">
+					<h2 class="tit">홍길동</h2>
+					<span class="menu">강의목록</span>
+				</div>
+			</div>
+
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					<div class="lnb-area">
+						<ul class="lnb-list">
+							<li class="list current">
+								<a href="#"><span>강의목록</span></a>
+							</li>
+							<li class="qna">
+								<a href="#"><span>과제 / 학습<br>Q&A</span></a>
+							</li>
+							<li class="edit">
+								<a href="#"><span>회원정보<br>수정</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cont-inner">
+
+						<!-- [D] 내역 없을 시 
+						<div class="nodata3">
+							<p>강의중인 내역이 없습니다.</p>
+						</div>
+						
+						<div class="main-teacher">
+							<div class="tit-area">
+								<h2 class="tit-d1">올리자만의 <strong>1타 선생님!</strong></h2>
+							</div>
+							<div class="main-teacher-area">
+								<ul class="main-teacher-list">
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">박승주</strong>
+													<span class="desc">중고등 내신 준비 전문 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>다가온 수학 강사</li>
+													<li>Math153학원 강사</li>
+													<li>수학의 바이블 강의</li>
+													<li>RPM, 센, 블랙라벨 강의 </li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher2.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>중등(영어)</span></div>
+													<strong class="name">이우종</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>긴 글 들어갈 때 긴 글 들어갈 때 긴 글 들어갈 때 긴 글 들어갈 때</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="inner">
+												<div class="header">
+													<div class="class"><span>초등(영어)</span></div>
+													<strong class="name">남운기</strong>
+													<span class="desc">수학의 횡단비결을 알려줄 1타 쌤!</span>
+												</div>
+												<ul class="career">
+													<li>연세대학교 교육대학원 석사</li>
+													<li>갓에듀 대표강사</li>
+													<li>‘횡단비결’ 저자</li>
+													<li>초,중,고 수학책 35권 집필</li>
+												</ul>
+											</div>
+											<img alt="" src="/olliza/resource/img/@temp/@list_teacher1.png">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						// [D] 내역 없을 시 -->
+
+						<div class="class-box">
+							<div class="class-inner">
+								<h2 class="tit-d2">수강중인 강좌</h2>
+								<ul class="class-list">
+									<!-- [D] 수업 상태에 따른 li의 클래스 종류
+										- wait : 수업 대기
+										- start : 수업 시작
+										- check : 출석 체크
+										- banner : 배너
+									-->
+									<li class="wait">
+										<span class="grade">초등 1학년</span>
+										<div class="inner">
+											<div class="header">
+												<span class="name"><strong>김우종</strong> 선생님</span>
+												<span class="desc">매주 월, 화 20:00</span>
+											</div>
+											<div class="body">
+												<button type="button" class="btn-calendar"><span class="blind">시간표 보기</span></button>
+												<span class="period">2021.01.01~2021.06.30</span>
+												<div class="check-info">
+													<span>11회 출석</span>
+													<span>총 200회 남음</span>
+												</div>
+												<div class="btns">
+													<a href="#" class="btn-base"><span>수업 대기</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="start">
+										<span class="grade">초등 1학년</span>
+										<div class="inner">
+											<div class="header">
+												<span class="name"><strong>김우종</strong> 선생님</span>
+												<span class="desc">매주 월, 화 20:00</span>
+											</div>
+											<div class="body">
+												<button type="button" class="btn-calendar"><span class="blind">시간표 보기</span></button>
+												<span class="period">2021.01.01~2021.06.30</span>
+												<div class="check-info">
+													<span>11회 출석</span>
+													<span>총 200회 남음</span>
+												</div>
+												<div class="btns">
+													<a href="#" class="btn-base"><span>수업 시작</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="check">
+										<span class="grade">초등 1학년</span>
+										<div class="inner">
+											<div class="header">
+												<span class="name"><strong>김우종</strong> 선생님</span>
+												<span class="desc">매주 월, 화 20:00</span>
+											</div>
+											<div class="body">
+												<button type="button" class="btn-calendar"><span class="blind">시간표 보기</span></button>
+												<span class="period">2021.01.01~2021.06.30</span>
+												<div class="check-info">
+													<span>11회 출석</span>
+													<span>총 200회 남음</span>
+												</div>
+												<div class="btns">
+													<a href="#" class="btn-base"><span>출석 체크</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="banner">
+										<a href="#" class="inner">
+											<img src="/olliza/resource/img/img_banner.png" alt="">
+											<span class="text">
+												<span class="desc">홍길동님을 위한</span>
+												<span class="subject">올리자만의<br><strong>시크릿노트</strong></span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="class-inner">
+								<h2 class="tit-d2">이전 수강내역</h2>
+										
+								<div class="search-area history">
+									<div class="search-inner">
+										<div class="select-area">
+											<select class="select">
+												<option value="">전체</option>
+												<option value="">옵션1</option>
+												<option value="">옵션2</option>
+											</select>
+										</div>
+										<div class="filter-area">
+											<button type="button"><span>1주일</span></button>
+											<button type="button"><span>15일</span></button>
+											<button type="button"><span>1개월</span></button>
+										</div>
+										<div class="period-area">
+											<span class="inp-period">
+												<input type="inp" value="2020년7월01일">
+											</span>
+											<span class="divide">
+												~
+											</span>
+											<span class="inp-period">
+												<input type="inp" value="2020년7월01일">
+											</span>
+										</div>
+										<div class="search-inp">
+											<input type="text" class="inp size-s" placeholder="선생님 입력" title="선생님 입력">
+										</div>
+										<div class="search-btns">
+											<button type="button" class="btn-base sub2 size-s"><span>초기화</span></button>
+											<button type="button" class="btn-search size-s"><span class="blind">조회</span></button>
+										</div>
+									</div>
+								</div>
+								
+						<div class="bbs-area">
+							<div class="bbs-upper type-history">
+								<ul>
+									<li class="num">구분</li>
+									<li class="student">학생명</li>
+									<li class="period">수강기간</li>
+									<li class="cost">결제금액</li>
+									<li class="status">현황</li>
+								</ul>
+							</div>
+							<ul class="bbs-list type-history">
+								<!-- [Start]] 내역 없을 시 -->
+								<li class="item nodata2">
+									<p>내역이 없습니다.</p>
+								</li>
+								<!-- // [End] 내역 없을 시 -->
+	
+								<li class="item"> 
+									<div class="header">
+										<strong class="num">100</strong>
+										<span class="student">홍길동</span>
+										<span class="period tac">2021.01.01~2021.06.30</span>
+										<div class="additional">
+											<span class="cost">150,000원</span>
+											<span class="status">수강완료
+												<button type="button" class="btn-base sub3 size-s"><span>다시 결제하기</span></button>
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="item"> 
+									<div class="header">
+										<strong class="num">99</strong>
+										<span class="student">홍길동</span>
+										<span class="period tac">2021.01.01~2021.06.30</span>
+										<div class="additional">
+											<span class="cost">150,000원</span>
+											<span class="status">수강완료
+												<button type="button" class="btn-base sub3 size-s"><span>다시 결제하기</span></button>
+											</span>
+										</div>
+									</div>
+								</li>
+								<li class="item"> 
+									<div class="header">
+										<strong class="num">98</strong>
+										<span class="student">홍길동</span>
+										<span class="period tac">2021.01.01~2021.06.30</span>
+										<div class="additional">
+											<span class="cost">150,000원</span>
+											<span class="status">수강완료
+												<button type="button" class="btn-base sub3 size-s"><span>다시 결제하기</span></button>
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- [S] paging -->
+							<div class="paging-area">
+								<a href="#" class="btn-jump first disabled"><span>처음 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<a href="#" class="btn-jump prev disabled"><span>이전 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<div class="paging-link">
+									<a href="#" class="current"><span>1</span></a> <!-- [D] 현재 페이징에 current 클래스 추가 -->
+									<a href="#"><span>2</span></a>
+									<a href="#"><span>3</span></a>
+									<a href="#"><span>4</span></a>
+									<a href="#"><span>5</span></a>
+									<a href="#"><span>6</span></a>
+									<a href="#"><span>7</span></a>
+									<a href="#"><span>8</span></a>
+									<a href="#"><span>9</span></a>
+									<a href="#"><span>10</span></a>
+								</div>
+								<div class="paging-fraction">
+									<span class="current">1</span>
+									<i>/</i>
+									<span class="all">5</span>
+								</div>
+								<a href="#" class="btn-jump next"><span>다음 페이지</span></a>
+								<a href="#" class="btn-jump last"><span>마지막 페이지</span></a>
+	
+								<button type="button" class="btn-more-view2"><span>더 보기</span></button>
+							</div>
+							<!-- // [E] paging -->
+						</div>
+							</div>
+						</div>
+
+
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>

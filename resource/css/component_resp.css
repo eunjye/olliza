@@ -26,8 +26,8 @@
 	
 	/* button */
 	.btn-close { width:40px; height:40px; }
-	
-	.banner-area { margin-top:-70px; }
+
+	.paging-link { margin:0 10px; }
 
 	.intro-desc { left:auto; right:5%; width:28vw; height:28vw; top:100px; font-size:4vw; padding:6% 0 0 6%; transform:none; }
 	.intro-vod { max-width:600px; width:75vw; padding-top:600px; margin-bottom:-5%; border-radius:0 10vw 0 10vw; }
@@ -102,7 +102,7 @@
 	.footer-area .footer-grid { padding:20px 25px 50px; }
 	.footer-link { display:block; width:100%; padding:0; margin-top:15px; }
 	.footer-link li:before { display:none; }
-	.footer-link li a { padding:5px 0; margin-right:20px; font-size:16px; }
+	.footer-link li a { padding:5px 0; margin-right:10px; font-size:16px; }
 	.footer-area .address { padding-top:20px; }
 	.footer-area .address span { font-size:14px; }
 	.footer-area .address span:first-child { margin-top:0 }
@@ -113,8 +113,7 @@
 
 	/* main
 	=============== */
-	main { padding-top:70px; }
-	.visual-area.main { height: calc(61vw + 70px); }
+	.visual-area.main { height: calc(69vw + 70px); }
 	.slider-pagination.type-num { top:40px; zoom:0.7; }
 	.special-list li .step{ top:-35px; width:70px; height:70px; font-size:24px; line-height:70px; }
 	.special-list li { width:calc(50% - 20px); margin:10px; min-height:300px; padding:60px 30px 130px; }
@@ -143,6 +142,11 @@
 	.main-teacher-list .header .desc { font-size:16px; }
 	.main-teacher-list > li > a:after { zoom:.8; bottom:25px; }
 	.main-teacher-list > li .inner { padding-bottom:80px }
+
+	.cont-inner .main-teacher-list > li img { width:80px; }
+	.cont-inner .main-teacher-list > li > a {padding-right:0; }
+	.cont-inner .main-teacher-list > li .inner { padding-bottom:60px; } 
+	.cont-inner .main-teacher-list { margin-left:0; margin-right:0; }
 
 	.slider-teacher { margin-left:25px; margin-right:25px; }
 	.slider-teacher .slick-arrow { zoom:0.7; }
@@ -180,9 +184,9 @@
 	.process-list > li:nth-child(3) .num { top:25%; }
 	.process-list > li:nth-child(5) .num { top:15%; }
 	.process-list .inner { width:70%; }
-	.process-list strong { font-size:16px; }
-	.process-list p { }
-
+	.process-list strong { font-size:20px; }
+	.process-list p { font-size:16px; }
+	 
 	.service-area .item { }
 	.service-area .btn-area > div { display:block; text-align:left; margin-bottom:10px; }
 	.service-area .cont p { word-break:keep-all; }
@@ -218,8 +222,6 @@
 	.footer-link li a { font-size:14px; }
 	.footer-area .address span { font-size:12px; }
 
-	.type-box .class-list2 { margin-bottom:0; }
-	.type-box .class-list2 .item { flex:0 1 71vw; margin:10px auto;}
 
 
 	.btn-acco { zoom:0.7 }
@@ -232,7 +234,7 @@
 	.slider-banner.close { overflow:visible; }
 	.banner-btn-area {  width:100%; }
 	.btn-toggle.close { left:0; right:0; margin:0 auto; }
-	.slider-banner { position:relative; display:block; margin-top:-70px; line-height:0; overflow:hidden; }
+	.slider-banner { position:relative; display:block; line-height:0; overflow:hidden; }
 	.slider-banner img { display:block; width:100%; height:auto; }
 
 	.slider-visual .slide{ }
@@ -240,6 +242,9 @@
 	.cont-area.main-special { background:#E4ECFC; margin-top:calc(-10vw - 70px); padding-top:20px; }
 	.main-teacher .tit-d1:before { width:2px; height:40px; }
 	.slider-teacher .class { top:20px; }
+
+	.process-list > li:nth-child(5) { height:70vw;}
+
 
 	.btn-more { width:40px; height:40px; }
 
@@ -250,10 +255,10 @@
 	.slick-dots > li.slick-active { background:#AF5AFF; }
 
 	.special-list { flex-wrap:wrap; }
-	.special-list li { width:100%; flex:0 0 100%; min-height:0; padding:110px 25px 25px; text-align:center; margin:40px 0 0; }
-	.special-list li:after { zoom:.6; top:20px; bottom:auto; }
-	.special-list li strong { font-size:16px; }
-	.special-list li p { font-size:14px; }
+	.special-list li { width:100%; flex:0 0 100%; min-height:0; padding:80px 25px 25px; text-align:center; margin:40px 0 0; }
+	.special-list li:after { zoom:.4; top:20px; bottom:auto; }
+	.special-list li strong { font-size:20px; }
+	.special-list li p { font-size:16px; }
 	.special-list li .step { zoom:0.7; }
 
 	.main-teacher-list { margin:15px 0 0; }
@@ -301,7 +306,6 @@
 	.service-area .item { flex:0 0 100%; border:0; padding:5px 0; }
 	.service-area .item + .item { margin-top:20px; }
 	.cont-area.service .tit { font-size:24px; }
-
 	
 	.info-list dt { font-size:25px; }
 	.bul-base > li { font-size:16px; }
@@ -309,43 +313,6 @@
 	.info-list > div dt { margin-top:200px }
 	.info-list > div.item2 dt { margin-top:240px; }
 	.desc-img { zoom:0.7; }
-
-	.skill-tit { font-size:25px; }
-	.skill-sub { display:block; margin:25px auto 15px; max-width:400px; padding:0; font-size:12px; line-height:48px; height:45px; letter-spacing:-0.025em; white-space:nowrap; }
-	.skill-desc { padding:0; font-size:14px; line-height:1.6em; word-break: keep-all;}
-	.skill-list { margin-top:20px; padding:0 20px; }
-	.skill-list:after { display:block; clear:both; content:""; }
-	.skill-list > li { float:left; width:50%; text-align:center; margin:10px 0 0; }
-	.skill-list > li .icon { margin:0 auto; transform:scale(0.8); }
-	.skill-list > li strong { margin-top:5px; font-size:15px; }
-
-	.cont-area.skill{ padding-bottom:0; }
-	.cont-area.skill .btn-base { height:50px; line-height:50px; border-radius:25px; font-size:20px; display:block; padding:0; }
-
-	.guide-tit { font-size:26px; }
-
-	/* main : guide */
-	.guide-list .slick-dots { position:relative; text-align:center; margin-bottom:30px; margin-top:-10px; }
-	.guide-list .slick-dots > li { display:inline-block; width:10px; height:10px; border-radius:50%; background:#fff; overflow:hidden; margin:0 7px; color:transparent; box-shadow:4px 4px 5px rgba(0,0,0,0.1);}
-	.guide-list .slick-dots > li.slick-active { background:#FD928C; }
-	.cont-area.guide .cont-grid { padding-left:0; padding-right:0; }
-	.guide-list { height:auto; transform:none; margin:30px 0 0; }
-	.guide-list:before { z-index:0; padding-top:133%; height:0; bottom:-60%; }
-	.guide-list .item { z-index:1; position:relative;left:auto !important; bottom:auto !important; top:auto; width:100%; height:auto; border-radius:25px; transform:none !important; margin:0 20px 25px; }
-	.guide-list .subject { font-size:20px; height:50px; line-height:55px; }
-	.guide-list .subject img { width:30px; height:auto; }
-	.guide-list .item .vod-area { height:46.5vw; pointer-events: initial !important; ; }
-	.guide-list .item .vod-area .video-js { width:110%; height:110%; left:50%; transform:translate(-50%)}
-	.guide-area .desc {padding:20px 15px 25px !important; }
-	.guide-area span { display:block;font-size:16px !important; line-height:1.4em; }
-
-	
-
-	.register-tit { font-size:26px; margin-bottom:30px; }
-	.register-tit strong { font-size:30px; }
-
-	.review-list { padding:40px 25px;}
-
 
 	.support-info { margin:0; }
 	.support-info > div { float:none; width:100%; padding:0; display:block; }
@@ -358,31 +325,11 @@
 	.cont-area.support .cont-grid { padding:40px 25px; }
 	.support-info .support-ico { right:0; width:80px; padding-top:80px; top:0 }
 
-	/* detail */
-	.detail-intro { min-height:0; }
-	.teacher-name { font-size:50px; }
-	.class-vod { display:none; width:60%; margin:0; max-height:100%; height:30vw; max-height:350px; }
-	.teacher-img { width:45%; }
-	.teacher-info .desc { font-size:25px; }
-	.teacher-info .desc span { margin-top:8px; display:block; }
-	.detail-intro .teacher-info { display:block; width:100%; background-image:none; margin:20px 0 0; }
-	.class-tit:before { zoom:0.7; margin-top:-8px;}
 	.bul-check { margin-top:20px; margin-right:40%; }
 	.bul-check > li{ font-size:16px; background-position:0 2px; }
 	.class-tit { font-size:32px; }
 	.vod-list .title { font-size:25px; padding-left:20px; padding-right:20px; }
 
-	.class-info { padding:30px 25px 0; }
-	.class-info-list { margin-top:30px; }
-	.class-info-list li{ width:100%; margin:30px 0; min-height:0; padding-bottom:30px; }
-	.class-info-list li:before { transform:scale(.8); margin:-70px auto 0; }
-	.class-info-list strong { font-size:20px; margin:5px auto 10px; }
-	
-	.class-point-box { padding:30px 20px; }
-	.class-point-box .class-tit { margin-bottom:80px; }
-	.class-point-list li { width:100%; margin-left:0; font-size:18px; padding:15px 25px; min-height:0; }
-	.class-point-list li i { bottom:100%; margin-bottom:10px; left:0; margin-right:0; right:auto; height:45px; line-height:45px; font-size:16px; }
-	.class-point-list li .desc { font-size:16px; }
 	.paging-area { margin:40px 0 60px; }
 
 	.vod-list { text-align:center; margin-top:140px; }
@@ -423,15 +370,6 @@
 	.slider-class.type2 .slick-prev { margin-left:20px; }
 	.slider-class.type2 .slick-next { margin-right:20px; }
 	
-	.class-list2 { margin:0 60px; justify-content:center;}
-	.class-list2 .item { flex:0 0 auto; width:71vw; margin:10px 10px; }
-	.class-list2 .item strong { font-size:16px; padding-bottom:8%;}
-
-	.class-tit2 { margin-top:40px; font-size:26px; }
-	.class-tit2:first-child { margin-top:0; }
-
-	.class-tit3 { font-size:26px; margin-bottom:10px; }
-
 	.form-search .form-inp { width:calc(100% - 100px)}
 	.slider-class .slick-dots { position:relative; text-align:center; margin-bottom:30px; margin-top:10px; }
 	.slider-class .slick-dots > li { display:inline-block; width:10px; height:10px; border-radius:50%; background:#fff; overflow:hidden; margin:0 5px; color:transparent; box-shadow:4px 4px 5px rgba(0,0,0,0.1);}
@@ -471,9 +409,6 @@
 	.class-recommend { font-size:16px; }
 	.class-recommend .underline span:before { bottom:5px; }
 
-	.class-list3 .tit { font-size:24px; margin-bottom:30px; }
-	.class-list3 .tit:before { zoom:0.7; }
-
 	.recommend-list { flex-wrap:wrap; margin:0 -10px; }
 	.recommend-list > li:first-child { margin:10px; }
 	.recommend-list > li { flex:1 1 calc(50% - 20px); margin:10px; }
@@ -489,46 +424,6 @@
 	.detail-list .time { width:17%; }
 
 
-	/* landing
-	================== */
-	.landing-visual .landing-intro { font-size:30px; }
-	.landing-banner { font-size:20px; padding-top:30px; padding-bottom:30px; }
-	.landing-banner .tag. { height:30px; line-height:32px; }
-
-	.landing-skill .tit { padding-left:25px; padding-right:25px; font-size:18px; }
-	.landing-skill .desc { padding-left:25px; padding-right:25px; font-size:18px; }
-	.landing-skill .desc .highlight { padding-bottom:2px; } 
-	.skill-graph { padding:150px 20px 170px; }
-	.skill-graph .teachers .info { transform:scale(0.8);}
-	.skill-graph .teachers { width:100%; height:0; padding-top:100%; background-size:contain; }
-	.skill-graph .teachers > li .link { font-size:16px; left:0 !important; width:100%; text-align:center !important; }
-	.skill-graph .teachers > li.n4 .link a:after, .skill-graph .teachers > li.n5 .link a:after { position:static; margin:0; }
-	.skill-graph .teachers > li .link a:after { margin:0 0 0 5px !important; }
-	.skill-graph .teachers > li.n1 .link { bottom:100%; }
-	.skill-graph .teachers > li .link { top:90%; }
-
-	.skill-graph .teachers:before { zoom:0.7; }
-	.skill-graph .teachers > li.n1 { margin-top:-20px; }
-	.skill-graph .teachers > li.n2 { margin-top:-140px; margin-left:-140px; }
-	.skill-graph .teachers > li.n3 { margin-top:-160px; margin-left:50px; }
-	.skill-graph .teachers > li.n4 { margin-top:-160px; margin-left:-190px; }
-	.skill-graph .teachers > li.n5 { margin-top:-140px; margin-left:15px; }
-
-	.teacher-list { margin:30px 0 70px; }
-	.teacher-list .img { z-index:-1; width:300px; left:0; }
-	.teacher-list .img img { width:100%; height:auto; }
-	.teacher-list > div { padding-left:270px; }
-
-	.teacher-list dt { font-size:20px; }
-	.teacher-list dd strong { font-size:16px; }
-
-	.landing-benefit .tit { font-size:25px; }
-	.landing-benefit .benefits > div { padding:0 20px; }
-	.landing-benefit .benefits > div:before { zoom:0.7; }
-	.landing-benefit .benefits > div:after { zoom:0.5; }
-	.landing-benefit .benefits dd { padding:0; }
-
-	.slider-video .video { padding:0; }
 }
 /* only mo */
 @media (min-width:501px) {
@@ -602,22 +497,10 @@
 	.form-area.type-cert .inp-base { width:100%; min-width:0; padding:0 10px; box-sizing:border-box }
 	.form-txt { font-size:12px; }
 	
-	.class-list li { display:block; margin:10px 0; flex:0 0 100%; }
-	
 	.guide-list li:not([data-status="active"]) .vod-area { pointer-events:default; }
 	
 	.teacher-img { width:50%; }
 	.class-vod { width:80%; height:45vw; }
-	.class-list .head { padding:13px 20px; height:auto; }
-	.class-list .head span { display:block; }
-	.class-list .head strong { display:block; height:auto; }
-	.class-list li { flex:0 0 100%; width:100%; }
-	.class-list .body { padding:13px 20px }
-	
-	/* .review-list li { display:block; width:100%; padding:0; margin:0 0 60px; }
-	.review-list li:last-child { margin-bottom:0; }
-	.review-list li > div { position:relative; padding:55px 25px 70px; }
-	.review-list p { font-size:16px; } */
 	.cont-area.register .btn-area { margin:25px 0 0; }
 	
 	

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+
+			<div class="category-area etc qna">
+				<div class="cont-grid">
+					<h2 class="tit">수강후기</h2>
+					<span class="info">고객센터 02-6333-1063 &nbsp;|&nbsp; 평일 AM 09:00~PM 17:00 </span>
+				</div>
+			</div>
+
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					<div class="lnb-area">
+						<ul class="lnb-list">
+							<li class="notice">
+								<a href="#"><span>공지사항</span></a>
+							</li>
+							<li class="faq">
+								<a href="#"><span>자주하는 <br>질문</span></a>
+							</li>
+							<li class="qna">
+								<a href="#"><span>과제 / 학습<br>Q&A</span></a>
+							</li>
+							<li class="review current">
+								<a href="#"><span>수강후기</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cont-inner">
+						<div class="bbs-area">
+							<div class="bbs-write">
+                <table class="tbl-bbs">
+                  <colgroup>
+                    <col style="width:15%">
+                    <col style="width:85%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">평가 별점</th>
+                      <td>
+												<span class="score-area type-select">
+													<div class="btns">
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score0');"></button>
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score1');"></button>
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score2');"></button>
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score3');"></button>
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score4');"></button>
+														<button type="button" onclick="$('.score-area').removeClass('score0 score1 score2 score3 score4 score5').addClass('score5');"></button>
+													</div>
+												</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">수업</th>
+                      <td>
+                        <select class="select">
+                          <option value="" hidden="hidden">선택</option>
+                          <option value="">옵션 옵션1</option>
+                          <option value="">옵션 옵션2</option>
+                          <option value="">옵션 옵션3</option>
+                          <option value="">옵션 옵션4</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제목</th>
+                      <td>
+                        <input type="text" class="inp inp-full size-s" title="제목">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">내용</th>
+                      <td>
+                        <textarea name="" id="" cols="30" rows="10" class="inp inp-full size-s"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">파일첨부1</th>
+                      <td>
+                        <button type="button" class="btn-base sub2 size-s"><Span>파일선택</Span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">도배방지키</th>
+                      <td>
+                        <input type="tel" class="inp inp-lock size-s" title="도배방지키">
+                        <span class="lock-key">1234</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+							</div>
+							<div class="btn-footer tac">
+								<a href="#" class="btn-base sub4 size-s"><span>취소</span></a>
+								<a href="#" class="btn-base sub4 size-s"><span>다시쓰기</span></a>
+								<a href="#" class="btn-base sub3 size-s"><span>저장</span></a>
+							</div>
+						</div>
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>
