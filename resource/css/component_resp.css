@@ -203,7 +203,7 @@
 	.detail-intro .class-tag { font-size:22px; }
 	.detail-intro .teacher-name { font-size:32px; }
 	.detail-intro .btn-base { zoom:.8; padding:10px 18px 11px; min-height:60px; }
-	.detail-intro .intro-area .inner.img { position:absolute; width:200px; right:25px; bottom:0; }
+	.detail-intro .intro-area .inner.img { position:absolute; width:270px; right:25px; bottom:0; }
 	.detail-intro .intro-area .inner.teacher { min-height:200px; padding-bottom:20px; }
 	.cont-area.detail-body .cont-grid { padding:50px 25px 70px; margin:0 25px; }
 	.category-area .menu { font-size:18px; }
@@ -239,6 +239,16 @@
 	.search-inner > div { display:block; padding:5px 0; width:100%; }
 	.search-inner .search-inp { padding:5px 0; }
 	.search-inner .utils { text-align:left; }
+
+	.review-area .bbs-list .header { display:block; height:auto; padding:15px 20px 15px 70px; }
+	.review-area .bbs-list .item { position:relative; }
+	.review-area .bbs-list .item .num { position:absolute; top:0; left:0; height:100%; padding:0; font-size:16px; }
+	.review-area .bbs-list .subject { display:inline; padding:0; width:100%; }
+	.review-area .bbs-list .subject span { font-size:16px; }
+	.review-area .bbs-list .additional { margin-top:10px; text-align:left; }
+	.review-area .bbs-list .item.open .header { padding:20px 25px; }
+	.review-area .bbs-list .item .body { padding:0 25px 20px; }
+	.review-area .bbs-list .item.open .num { display:inline; position:static; vertical-align:middle; }
 
 }
 
@@ -404,8 +414,9 @@
 	.cont-area.detail-body { padding:60px 0; }
 	.cont-area.detail-body .cont-grid { padding:40px 15px 60px; }
 
-	.bbs-list .header{ height:auto; }
 	.review-area { margin-top:0; }
+	.bbs-list .additional { white-space:normal;}
+	.bbs-list .additional > span { width:auto; margin-right:10px; }
 
 	.lock-key { display:inline-block; margin:10px 0 0; }
 	

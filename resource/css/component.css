@@ -686,7 +686,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list .item.open .body { display:block; }
 .bbs-list .item.open { background:#f4f7fc; }
 .bbs-list .item.open .header { padding-left:45px; }
-.bbs-list .item.open .num { background:none; color:#252525; flex:0 0 auto; width:auto; height:auto; line-height:1.4; font-size:20px; }
+.bbs-list .item.open .num { background:none; color:#252525; flex:0 0 auto; width:auto; height:auto; line-height:1.4; font-size:20px; min-width:0; padding:0; }
 .bbs-list .item.open .num:after { content:"."; margin-right:5px; }
 .bbs-list .item.open .subject { padding:0 10px 0 0; }
 .bbs-list .item.open .subject span { display:inline; font-weight:700; height:auto; white-space:pre-wrap; overflow:visible; line-height:1.4; }
