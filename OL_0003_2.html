@@ -85,6 +85,10 @@
         ; (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
 
+            $('.review-area .item a').off('click.aa').on('click.aa', function(){
+              $(this).closest('.item').toggleClass('open');
+            })
+
 
           });
         })(jQuery, window, document);
