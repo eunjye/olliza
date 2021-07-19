@@ -135,11 +135,12 @@
 	.main-teacher-list { margin-left:25px; margin-right:25px; }
 	.main-teacher .tab-btns button { width:100%; }
 	.main-teacher-list > li { flex-basis:50%; }
-	.main-teacher-list > li img { z-index:1; flex:0 0 auto; position:relative; right:auto; bottom:auto; float:right; width:130px; }
-	.main-teacher-list > li > a { display:flex; align-items:flex-end; justify-content:space-between; padding:25px 0 0 25px; overflow:hidden; }
+	.main-teacher-list > li img { width:130px; right:-20px; }
+	.main-teacher-list > li > a { display:flex; align-items:flex-end; justify-content:space-between; padding:25px 0 0 25px; }
 	.main-teacher-list > li .inner { flex:1 1 auto; width:calc(100% - 100px); padding-bottom:50px; }
 	.main-teacher-list .header .name { font-size:26px; }
-	.main-teacher-list .header .desc { font-size:16px; }
+	.main-teacher-list .header .desc { font-size:16px; margin-right:110px; }
+	.main-teacher-list .career { margin-right:110px; }
 	.main-teacher-list > li > a:after { zoom:.8; bottom:25px; }
 	.main-teacher-list > li .inner { padding-bottom:80px }
 
