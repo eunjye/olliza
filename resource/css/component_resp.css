@@ -195,7 +195,7 @@
 	
 	/* subpages
 	================= */
-	.detail-intro { padding:60px 25px; }
+	.detail-intro { padding:60px 25px 1px 25px; }
 	.detail-intro .intro-area { position:relative; display:block; }
 	.detail-intro .intro-area .inner.class { padding-bottom:50px; }
 	.detail-intro .class-tit { font-size:32px; }
@@ -203,10 +203,13 @@
 	.detail-intro .class-tag { font-size:22px; }
 	.detail-intro .teacher-name { font-size:32px; }
 	.detail-intro .btn-base { zoom:.8; padding:10px 18px 11px; min-height:60px; }
-	.detail-intro .intro-area .inner.img { position:absolute; width:270px; right:25px; bottom:0; }
-	.detail-intro .intro-area .inner.teacher { min-height:200px; padding-bottom:20px; }
+	.detail-intro .intro-area .inner.img { position:absolute; width:270px; right:25px; bottom:-1px; }
+	.detail-intro .intro-area .inner.teacher { min-height:200px; padding-bottom:40px; }
+	.real-review { margin-bottom:60px; }
 	.cont-area.detail-body .cont-grid { padding:50px 25px 70px; margin:0 25px; }
 	.category-area .menu { font-size:18px; }
+
+	.cont-area.detail-body.no-realreview .cont-grid { margin-top:0; }
 
 	.subpage-area .cont-grid { padding:0 25px; }
 	.subpage-area .lnb-area { float:none; width:100%; padding:0; }
@@ -387,7 +390,7 @@
 	.class-tit { font-size:32px; }
 	.vod-list .title { font-size:25px; padding-left:20px; padding-right:20px; }
 
-	.paging-area { margin:40px 0 60px; }
+	.paging-area { margin:40px 0 0; }
 
 	/* subpage
 	================ */
@@ -465,6 +468,8 @@
 
 	.cont-grid.type2 { padding-bottom:50px; }
 
+	.nodata { font-size:16px; }
+
 	.ui-tab.type3 .ui-tab-btns { flex-wrap:wrap; }
 	.ui-tab.type3 .ui-tab-btn { flex:1 1 30%; height:40px; line-height:37px; }
 	.ui-tab.type3 .ui-tab-btn.selected:after { z-index:1; border-width:7px; margin-left:-7px; }
@@ -484,9 +489,6 @@
 
 	.bul-base > li { text-align:left; font-size:14px; padding-left:11px; }
 	.bul-base > li:before { width:4px; height:4px; margin-left:-11px; }
-
-	
-	.video-js .vjs-big-play-button .vjs-icon-placeholder:before { font-size:1.5em; }
 	
 	.paging-link,
 	.btn-jump { display:none; }
@@ -506,51 +508,20 @@
 	.form-area.type-cert .form-item { width:100%; }
 	.form-area.type-cert .inp-base { width:100%; min-width:0; padding:0 10px; box-sizing:border-box }
 	.form-txt { font-size:12px; }
-	
-	.guide-list li:not([data-status="active"]) .vod-area { pointer-events:default; }
-	
+		
 	.teacher-img { width:50%; }
 	.class-vod { width:80%; height:45vw; }
 	.cont-area.register .btn-area { margin:25px 0 0; }
 	
-	
+	/* subpages
+	================== */
+	.detail-intro { padding:40px 25px 1px 25px; }
+	.real-review { margin-bottom:40px; }
+	.review-area .bbs-list .subject span { font-size:14px; }
+	.review-area .bbs-list .item .num { font-size:14px; min-width:38px; }
+	.review-area .bbs-list .header { padding:15px 25px 15px 50px; }
+	.bbs-list .score-area { zoom:.8; }
+	.bbs-list .additional { font-size:12px; }
+	.bbs-list .additional > span { margin-bottom:5px; }
 
-
-	
-	.class-tit2:before { display:none; }
-	.class-tit2 { margin-top:25px; margin-bottom:5px; }
-
-	.landing-benefit .benefits > div { float:none; width:100%; padding:20px 0; }
-	.landing-benefit .benefits > div:after { left:50%; margin-left:-32px; top:12px; }
-
-	.landing-go { font-size:20px; }
-	.landing-go .btn-area { padding:0 25px; }
-	.landing-go .btn-base { width:100%; padding:0; }
-
-	.teacher-list { margin:20px 0 20px; }
-	.teacher-list > div { padding:25px 25px 0; overflow:hidden; }
-	.teacher-list .img { position:static; width:200px; float:right; }
-
-	.landing-visual:before { padding-top:300px; background-position:bottom right -164px; }
-	.landing-visual:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; content: ""; background: rgba(0,0,0,0.4); }
-	.landing-visual .landing-head { z-index:1;}
-	.landing-visual .landing-intro { font-size:26px; }
-	.landing-visual .landing-desc { font-size:20px; }
-
-	.landing-banner { padding-left:100px; font-size:16px; word-break:keep-all;}
-	.landing-banner:before { bottom:auto; top:-20px; zoom:0.6; }
-	.landing-banner .tag { height:28px; line-height:30px; font-size:14px; padding:0 8px; }
-
-	.landing-benefit .tit { margin-bottom:15px; }
-
-	.landing-visual .landing-head { padding:0 25px; }
-	.skill-graph { padding:100px 20px 120px; }
-	.skill-graph .teachers > li .link { top:75%; }
-	.skill-graph .teachers > li.n1 .link { bottom:85%; }
-	.skill-graph .teachers .info { transform:scale(0.6); }
-	.skill-graph .teachers > li.n1 { margin-top:-60px; }
-	.skill-graph .teachers > li.n2 { margin-left:-110px; }
-	.skill-graph .teachers > li.n3 { margin-top:-140px; margin-left:0px; }
-	.skill-graph .teachers > li.n4 { margin-top:-140px; margin-left:-150px; }
-	.skill-graph .teachers > li.n5 { margin-left:-25px ;}
 }
