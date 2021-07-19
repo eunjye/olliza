@@ -47,7 +47,7 @@
 	.btn-area { margin:30px 0 0; }
 	.btn-base { font-size:20px; padding:10px 8px 11px; min-height:0; }
 	.btn-more-view { font-size:16px; }
-	.btn-base.type2 { font-size:16px; padding:12px 20px; }
+	.cont-area.gift .btn-base.type2 { font-size:16px; padding:12px 20px; }
 
 	/* header */
 	.header-area.fixed .header-inner { height:70px; }
@@ -195,6 +195,17 @@
 	
 	/* subpages
 	================= */
+	.detail-intro { padding:60px 25px; }
+	.detail-intro .intro-area { position:relative; display:block; }
+	.detail-intro .intro-area .inner.class { padding-bottom:50px; }
+	.detail-intro .class-tit { font-size:32px; }
+	.detail-intro .class-desc { font-size:26px; }
+	.detail-intro .class-tag { font-size:22px; }
+	.detail-intro .teacher-name { font-size:32px; }
+	.detail-intro .btn-base { zoom:.8; padding:10px 18px 11px; min-height:60px; }
+	.detail-intro .intro-area .inner.img { position:absolute; width:200px; right:25px; bottom:0; }
+	.detail-intro .intro-area .inner.teacher { min-height:200px; padding-bottom:20px; }
+	.cont-area.detail-body .cont-grid { padding:50px 25px 70px; margin:0 25px; }
 	.category-area .menu { font-size:18px; }
 
 	.subpage-area .cont-grid { padding:0 25px; }
@@ -242,6 +253,7 @@
 
 	.desc-d1 { font-size:16px; }
 	.tit-d1 { font-size:24px; }
+	.tit-d2 { font-size:20px; }
 
 	.form-area.type-cert .img-certification { display:block; }
 	.form-area.type-cert .form-item { margin:10px 0 0; }
@@ -369,6 +381,32 @@
 
 	/* subpage
 	================ */
+	.detail-intro .class-tag { font-size:16px; padding:4px 15px 5px}
+	.detail-intro .class-tit,
+	.detail-intro .teacher-name { font-size:26px; }
+	.detail-intro .cont-grid { padding:0; }
+	.detail-intro .class-desc{ font-size:20px; }
+	.detail-intro .class-desc .highlight:after { zoom:.8; }
+	.detail-intro .btn-area { font-size:0; }
+	.detail-intro .btn-base { display: block; width:100%; margin-right:0; }
+	.detail-intro .intro-area .inner.img { right:0; width:120px; }
+	.detail-intro .teacher-history li { font-size:14px; }
+	.detail-intro .intro-area .inner.class { padding-bottom:20px; }
+
+	.real-review .review-header { padding:10px 25px; font-size:20px; }
+	.real-review .btn-arrow { zoom:.7; }
+	.real-review .review-body { display:block; padding:20px 25px 50px 25px; }
+	.real-review .review-body .img-area .img { width:100px; height:100px; }
+	.real-review .review-body .cont-area{ margin-top:20px }
+	.real-review .cont-area .subject { font-size:16px; margin-bottom:10px; }
+	.real-review .cont-area p { font-size:14px }
+
+	.cont-area.detail-body { padding:60px 0; }
+	.cont-area.detail-body .cont-grid { padding:40px 15px 60px; }
+
+	.bbs-list .header{ height:auto; }
+	.review-area { margin-top:0; }
+
 	.lock-key { display:inline-block; margin:10px 0 0; }
 	
 
@@ -443,10 +481,8 @@
 	.btn-jump { display:none; }
 	
 	.btn-area.col2 { padding:0 25px; }
-	.btn-base.type2 {width:100%; padding:10px 15px 12px; }
+	.cont-area.gift .btn-base.type2 {width:100%; padding:10px 15px 12px; }
 	.btn-area.col2 { font-size:0; }
-	.btn-base.primary,
-	.btn-base.secondary {width:calc(50% - 5px); padding:0 20px; height:60px; line-height:60px; font-size:18px; }
 	
 	.btn-more-view2 { display:block; width:100%; font-size:16px; text-align:center; display:block; border-radius:15px; padding:15px 0; border:1px solid #d9d9d9}
 	.btn-more-view2:after { display:inline-block; vertical-align:middle; width:10px; height:10px; border-bottom:1px solid #252525; border-right:1px solid #252525; transform:rotate(45deg); margin:-9px 0 0 20px; content:""; }

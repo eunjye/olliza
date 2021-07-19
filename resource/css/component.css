@@ -621,7 +621,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .detail-intro .class-desc .highlight { z-index:0; position:relative; }
 .detail-intro .class-desc .highlight:before { z-index:-1; position:absolute; bottom:2px; left:0; display:block; height:15px; width:100%; background:#8996fb; content:""; }
 .detail-intro .class-desc .highlight:after { display:inline-block; width:35px; height:32px; content:""; margin:-15px 0 0 10px; vertical-align:middle; background:url('../img/ico_point.png') 0 0/auto auto no-repeat; }
-.detail-intro .btn-base { margin:0 20px 20px 0; }
+.detail-intro .btn-base { margin:0 20px 20px 0; font-size:24px; }
 .detail-intro .btn-base.primary { padding-left:20px; padding-right:20px; border-radius:15px; font-size:24px; color:#d2ff57; background:linear-gradient(to right, #994cf1 0%, #755ff6 100%); }
 .detail-intro .btn-base.primary:hover span { color:#fff; }
 .detail-intro .btn-base.primary:before { z-index:1; position:relative; display:inline-block; width:37px; height:37px; background:url('../img/ico_arrowbtn.png') 0 0/auto auto no-repeat; content:""; vertical-align:middle; margin:-2px 7px 0 0; }
@@ -688,7 +688,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list .item.open .header { padding-left:45px; }
 .bbs-list .item.open .num { background:none; color:#252525; flex:0 0 auto; width:auto; height:auto; line-height:1.4; font-size:20px; }
 .bbs-list .item.open .num:after { content:"."; margin-right:5px; }
-.bbs-list .item.open .subject { padding:0; }
+.bbs-list .item.open .subject { padding:0 10px 0 0; }
 .bbs-list .item.open .subject span { display:inline; font-weight:700; height:auto; white-space:pre-wrap; overflow:visible; line-height:1.4; }
 .bbs-list .item.has-img .subject:after { flex:0 0 auto; display:inline-block; vertical-align:middle; margin:-1px 0 0 10px; width:30px; height:30px; background:url('../img/ico_file.png') 0 0/auto auto no-repeat; content:""; }
 .bbs-list .item.open .header { height:auto; align-items:flex-start; padding:20px 45px; }
