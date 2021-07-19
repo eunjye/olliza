@@ -704,7 +704,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list.type-history .num { width:70px; flex:0 0 auto; }
 .bbs-list.type-history .student { flex:1 1 15%; text-align:center; }
 .bbs-list.type-history .status { width:50%; flex:0 0 auto; padding-right:20px; white-space:normal; }
-.bbs-list.type-history .status .btn-base { margin:0; white-space: nowrap;}
+.bbs-list.type-history .status .btn-base { margin:0 0 0 5px; white-space: nowrap;}
 .bbs-list.type-history .additional { width:42%; flex:1 1 42%; }
 .bbs-list .btn-base { vertical-align:middle; margin:-2px 0 0 5px; }
 
@@ -767,7 +767,7 @@ fieldset:after { display:block; clear:both; content:""; }
 /* 마이페이지
 ==================== */
 .category-area { z-index:0; position:relative;  }
-.category-area .cont-grid { position:relative; min-height:180px; padding:35px 25px 35px 120px; text-align:center; color:#fff; }
+.category-area .cont-grid { position:relative; min-height:180px; padding:35px 25px 35px 210px; text-align:center; color:#fff; }
 .category-area .cont-grid:before { z-index:-1; position:absolute; display:block; bottom:0; left:25%; content:""; }
 .category-area .tit { display:block; font-size:40px; font-weight:700; }
 .category-area .menu { min-width:170px; display:inline-block; padding:8px 15px 9px; border-radius:26px; margin-top:12px; border:1px solid #fff; font-size:24px; font-weight:700; }
@@ -800,16 +800,17 @@ fieldset:after { display:block; clear:both; content:""; }
 .subpage-area .cont-inner.size-s { padding:0 0 0 60px; }
 .subpage-area .search-area { background:#e9edf6; border:1px solid #d6dcfa; border-radius:15px; padding:25px; }
 .search-inner { display:flex; align-items:center; justify-content:space-between; }
+.search-inner > div { padding-right:10px; }
 .search-inner .select-area { width:120px; flex:0 0 auto; }
-.search-inner .search-inp { flex:1 1 auto;max-width:300px; padding:0 25px; text-align:left; }
+.search-inner .search-inp { flex:1 1 auto;max-width:300px; text-align:left; }
 .search-inner .inp { width:100%; }
 .search-inner .search-btns { flex:1 1 auto; text-align:left; }
-.search-inner .search-btns .btn-base { margin-right:5px; }
+.search-inner .search-btns .btn-base { margin-right:2px; }
 .search-inner .search-btns .btn-base:last-child { margin-right:0; }
 .btn-base.size-s { min-height:36px; line-height:36px; border-radius:18px;min-width:80px; padding:0 20px; font-size:14px;  }
 .btn-base.sub2 { color:#fff; background:#b7c7fa }
 .btn-base.sub2:hover { background:#9eaee0 }
-.btn-base.sub3 { color:#fff;  background:#4965CE; }
+.btn-base.sub3 { color:#fff;  background:#6985D5; }
 .btn-base.sub3:hover { background:#3b559c; }
 .btn-base.sub4 { color:#fff;  background:#c1c1c1; }
 .btn-base.sub4:hover { background:#909090; }
@@ -862,9 +863,8 @@ fieldset:after { display:block; clear:both; content:""; }
 .filter-area { white-space:nowrap }
 .filter-area button { display:inline-block; width:48px; height:48px; border-radius:50%; border:1px solid #d2d2d2; text-align:center; background:#fff;}
 .inp-period input { height:36px; font-size:14px; border-radius:18px; border:1px solid #d2d2d2; padding:0 13px; width:145px; background:url('../img/ico_datepicker.png') center right 10px/auto no-repeat #fff; box-sizing:border-box; }
-.history .search-inner .select-area { width:130px; padding-right:10px; }
+.history .search-inner .select-area { width:130px; }
 .history .search-inner .select-area select { width:100%; }
-.history .search-inner .search-inp { padding:0 5px; }
 .history .search-inner .search-btns { white-space:nowrap;}
 
 /* wide */
@@ -903,7 +903,7 @@ fieldset:after { display:block; clear:both; content:""; }
 	.service-area .btn-area > div:first-child { padding-right:0; }
 	
 	.history .search-inner { flex-wrap:wrap; justify-content:flex-start; }
-	.search-inner .search-inp { flex:1 1 50%; padding:5px; max-width:100%; }
+	.search-inner .search-inp { flex:1 1 50%; padding:0 5px; max-width:100%; }
 	.search-inner > div { padding:5px; }
 	.search-inner .search-btns { flex:1 1 50%; }
 	.subpage-area .search-area { padding:20px; }
