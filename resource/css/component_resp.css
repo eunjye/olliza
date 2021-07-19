@@ -144,7 +144,8 @@
 	.main-teacher-list > li > a:after { zoom:.8; bottom:25px; }
 	.main-teacher-list > li .inner { padding-bottom:80px }
 
-	.cont-inner .main-teacher-list > li img { width:80px; }
+	.cont-inner .main-teacher { padding:40px 0 0; }
+	.cont-inner .main-teacher-list > li img { width:130px; }
 	.cont-inner .main-teacher-list > li > a {padding-right:0; }
 	.cont-inner .main-teacher-list > li .inner { padding-bottom:60px; } 
 	.cont-inner .main-teacher-list { margin-left:0; margin-right:0; }
@@ -323,6 +324,7 @@
 
 	.main-teacher-list { margin:15px 0 0; }
 	.main-teacher-list > li { width:100%; flex-basis:100%; padding:0; }
+	.main-teacher-list > li:first-child { margin-top:0; }
 	.main-teacher .tab-btns { margin:20px -10px 10px; }
 	.main-teacher .tab-btns > div { padding:0 2px; }
 	.main-teacher .tab-btns > div:last-child { padding-right:0; }
