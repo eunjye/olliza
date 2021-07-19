@@ -132,7 +132,7 @@
                   <!-- [End] 이미지 영역 -->
                 </div>
               </li>
-              <li class="item open"> 
+              <li class="item"> 
                 <a href="javascript:void(0);" class="header">
                   <strong class="num">8</strong>
                   <span class="subject"><span>선생님 덕분에 수학에 흥미를 놓치지 않았어요</span></span>
@@ -181,7 +181,7 @@
                   <!-- [End] 이미지 영역 -->
                 </div>
               </li>
-              <li class="item has-img open">
+              <li class="item has-img">
                 <a href="javascript:void(0);" class="header">
                   <strong class="num">5</strong>
                   <span class="subject"><span>선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요</span></span>
@@ -246,6 +246,7 @@
         ; (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
             $('.review-area .item a').off('click.aa').on('click.aa', function(){
+              $('.review-area .item.open').removeClass('open');
               $(this).closest('.item').toggleClass('open');
             })
 
