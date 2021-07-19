@@ -141,14 +141,15 @@
 	.main-teacher-list .header .name { font-size:26px; }
 	.main-teacher-list .header .desc { font-size:16px; margin-right:110px; }
 	.main-teacher-list .career { margin-right:110px; }
-	.main-teacher-list > li > a:after { zoom:.8; bottom:25px; }
+	.main-teacher-list > li > a:after { width:35px; height:35px; bottom:25px; left:25px; }
 	.main-teacher-list > li .inner { padding-bottom:80px }
 
 	.cont-inner .main-teacher { padding:40px 0 0; }
 	.cont-inner .main-teacher-list > li img { width:130px; }
 	.cont-inner .main-teacher-list > li > a {padding-right:0; }
-	.cont-inner .main-teacher-list > li .inner { padding-bottom:60px; } 
 	.cont-inner .main-teacher-list { margin-left:0; margin-right:0; }
+	.cont-inner .main-teacher-list .header .desc { margin-right:100px; }
+	.cont-inner .main-teacher-list .career { margin-right:100px; }
 
 	.slider-teacher { margin-left:25px; margin-right:25px; }
 	.slider-teacher .slick-arrow { zoom:0.7; }
@@ -217,9 +218,9 @@
 	.subpage-area .cont-inner { float:none; width:100%; }
 	.lnb-list { margin-bottom:20px; text-align:center; }
 	.lnb-list li { display:inline-block; margin:5px; }
-	.lnb-list li a { width:auto; padding:10px; height:auto; border-radius:10px; }
-	.lnb-list li a span { font-size:16px; }
-	.lnb-list li.current a { padding:10px; }
+	.lnb-list li a { width:auto; padding:5px 12px; height:auto; border-radius:10px; font-size:20px; }
+	.lnb-list li a span { font-size:20px; }
+	.lnb-list li.current a { padding:5px 12px;  }
 	.lnb-list a br { display:none; }
 	.lnb-list li.current a span:after { display:none; }
 	.category-area .tit { font-size:32px; }
@@ -232,28 +233,29 @@
 	
 	.bbs-list[class*="type-"] .header { height:auto; display:block; padding-left:70px; }
 	.bbs-list[class*="type-"] .item { position:relative; }
-	.bbs-list[class*="type-"] .item .num { position:absolute; top:0; left:0; height:100%; min-width:50px; height:100%; line-height:1; padding:15px 10px; }
+	.bbs-list[class*="type-"] .item .num { position:absolute; top:0; left:0; height:100%; min-width:50px; height:100%; line-height:1; padding:15px 10px; width:50px; }
 	.bbs-list[class*="type-"] .subject { display:block; width:auto; padding:10px 0 5px 0; }
 	.bbs-list[class*="type-"] .subject span { width:auto; max-width:calc(100% - 40px); height:auto; }
-	.bbs-list .is-lock .subject { padding:10px 0 5px 30px; background-position:0 10px; }
-	.bbs-list[class*="type-"] .additional { display:block; text-align:left; margin-bottom:15px;}
-	.bbs-list[class*="type-"] .additional > span { display:inline; width:auto; margin-right:10px; }
+	.bbs-list .is-lock .subject { padding:0 0 5px 30px; background-position:0 0; }
+	.bbs-list[class*="type-"] .additional { display:block; text-align:left; }
+	.bbs-list[class*="type-"] .additional > span { display:inline; width:auto; margin-right:10px; vertical-align:baseline; }
 
-	.search-inner { display:block; }
-	.search-inner > div { display:block; padding:5px 0; width:100%; }
-	.search-inner .search-inp { padding:5px 0; }
+	.search-inner > div { display:block; width:100%; flex:0 0 100%; }
 	.search-inner .utils { text-align:left; }
 
-	.review-area .bbs-list .header { display:block; height:auto; padding:15px 20px 15px 70px; }
-	.review-area .bbs-list .item { position:relative; }
-	.review-area .bbs-list .item .num { position:absolute; top:0; left:0; height:100%; padding:0; font-size:16px; }
-	.review-area .bbs-list .subject { display:inline; padding:0; width:100%; }
-	.review-area .bbs-list .subject span { font-size:16px; }
-	.review-area .bbs-list .additional { margin-top:10px; text-align:left; }
-	.review-area .bbs-list .item.open .header { padding:20px 25px; }
-	.review-area .bbs-list .item .body { padding:0 25px 20px; }
-	.review-area .bbs-list .item.open .num { display:inline; position:static; vertical-align:middle; }
+	.bbs-list .header { display:block; height:auto; padding:15px 20px 15px 70px; }
+	.bbs-list .item { position:relative; }
+	.bbs-list .item .num { position:absolute; top:0; left:0; height:100%; padding:0; font-size:16px; min-width:50px; }
+	.bbs-list .subject { display:inline; padding:0; width:100%; }
+	.bbs-list .subject span { font-size:16px; }
+	.bbs-list .additional { margin-top:10px; text-align:left; }
+	.bbs-list .item.open .header { padding:20px 25px; }
+	.bbs-list .item .body { padding:0 25px 20px; }
+	.bbs-list .item.open .num { display:inline; position:static; vertical-align:middle; }
 
+	.history .search-inner .filter-area{ width:auto; flex:1 1 auto; }
+	.period-area { white-space:normal;}
+	.period-area input:first-child { margin-bottom:5px; }
 }
 
 @media (max-width:765px) {
@@ -267,7 +269,7 @@
 
 	.desc-d1 { font-size:16px; }
 	.tit-d1 { font-size:24px; }
-	.tit-d2 { font-size:20px; }
+	.tit-d2 { font-size:20px; margin-bottom:15px; }
 
 	.form-area.type-cert .img-certification { display:block; }
 	.form-area.type-cert .form-item { margin:10px 0 0; }
@@ -282,8 +284,6 @@
 
 	.footer-link li a { font-size:14px; }
 	.footer-area .address span { font-size:12px; }
-
-
 
 	.btn-acco { zoom:0.7 }
 	.btn-base { font-size:16px; }
@@ -396,6 +396,7 @@
 
 	/* subpage
 	================ */
+	.lnb-list li a span { font-size:16px; }
 	.detail-intro .class-tag { font-size:16px; padding:4px 15px 5px}
 	.detail-intro .class-tit,
 	.detail-intro .teacher-name { font-size:26px; }
@@ -424,6 +425,22 @@
 	.bbs-list .additional > span { width:auto; margin-right:10px; }
 
 	.lock-key { display:inline-block; margin:10px 0 0; }
+
+	.period-area { white-space:nowrap;}
+	.class-box { padding:40px 10px; margin-left:-10px; margin-right:-10px; }
+	.subpage-area .search-area { padding:15px 10px; }
+
+	.class-list li { width:100%; flex-basis:100%; }
+	.class-list li:first-child { padding-top:0; }
+	.class-list .grade { font-size:16px; }
+	.class-list .header .name{ font-size:20px; }
+	.class-list .header { padding:30px 15px 20px; }
+	.class-list .body .btn-base { font-size:16px; height:40px; line-height:40px; min-height:0; }
+	.class-list .btn-calendar { top:-25px; }
+	.btn-calendar { width:50px; height:50px; background-size:contain; }
+	.class-list li.banner > a { height:calc(80vw - 80px); max-height:240px; }
+	.class-list li.banner .text { top:35px; right:35px; }
+	.class-list li.banner img { width:140px; bottom:25px;}
 	
 
 
@@ -519,9 +536,9 @@
 	================== */
 	.detail-intro { padding:40px 25px 1px 25px; }
 	.real-review { margin-bottom:40px; }
-	.review-area .bbs-list .subject span { font-size:14px; }
-	.review-area .bbs-list .item .num { font-size:14px; min-width:38px; }
-	.review-area .bbs-list .header { padding:15px 25px 15px 50px; }
+	.bbs-list .subject span { font-size:14px; }
+	.bbs-list .item .num { font-size:14px; min-width:38px; }
+	.bbs-list .header { padding:15px 25px 15px 50px; }
 	.bbs-list .score-area { zoom:.8; }
 	.bbs-list .additional { font-size:12px; }
 	.bbs-list .additional > span { margin-bottom:5px; }
