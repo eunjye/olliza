@@ -329,7 +329,7 @@
 
 	.cont-area.process { overflow:hidden; }
 	.cont-area.process .tit-d1{ font-size:24px; margin-bottom:20px; }
-	.process-list > li { flex-basis:100%; height:60vw; }
+	.process-list > li { flex-basis:100%; height:65vw; }
 	.process-list > li .inner { width:50%; }
 	.process-list > li:nth-child(1) .num { left:10%; }
 	.process-list > li:nth-child(2) .num { top:5%; }
