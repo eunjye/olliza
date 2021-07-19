@@ -796,7 +796,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .subpage-area { padding:45px 0 70px; }
 .subpage-area .cont-grid:after { display:block; clear:both; content:""; }
 .subpage-area .lnb-area { float:left; width:165px; padding-right:40px; }
-.subpage-area .cont-inner { float:left; width:calc(100% - 165px); max-width:1080px; }
+.subpage-area .cont-inner { float:left; width:calc(100% - 165px); }
 .subpage-area .cont-inner.size-s { padding:0 0 0 60px; }
 .subpage-area .search-area { background:#e9edf6; border:1px solid #d6dcfa; border-radius:15px; padding:25px; }
 .search-inner { display:flex; align-items:center; justify-content:space-between; }
@@ -827,7 +827,7 @@ fieldset:after { display:block; clear:both; content:""; }
 
 /* 강의목록
 ==================== */
-.class-box { max-width:1080px; padding:70px 50px; background:#f4f7fc;  }
+.class-box { padding:70px 50px; background:#f4f7fc;  }
 .class-box .class-inner { margin-top:50px; }
 .class-box .class-inner:first-child { margin-top:0; }
 .class-list { display:flex; align-items:stretch; justify-content:space-between; flex-wrap:wrap; }
