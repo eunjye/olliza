@@ -175,7 +175,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .header-area .gnb-area { float:left; width:calc(100% - 225px); margin-top:20px; text-align:center; }
 .header-area a { transition:color ease-in-out .2s; }
 .header-area .btn-menu { display:none; }
-.header-util { position:absolute; right:20px; top:50%;  width:auto; margin-top:-9px; text-align:right; }
+.header-util { position:absolute; right:20px; top:20px;  width:auto; margin-top:-9px; text-align:right; }
 .header-util > span { display:inline-block; margin:0 0 0 10px; vertical-align:middle; }
 .header-util a { display:inline-block; height:30px; text-align:center; color:#252525; font-size:12px; font-weight:700; }
 .header-util a:before { display:inline-block; width:30px; height:30px; background:url('../img/sp_header.png') 0 0/auto auto no-repeat; vertical-align:middle; content:""; }
