@@ -523,7 +523,7 @@
 					
 					$dialogDim.addClass('showing');
 
-					$dialogDim.css('z-index', 10 + activeLength).addClass('show ' + option.position).show();
+					$dialogDim.css('z-index', 90 + activeLength).addClass('show ' + option.position).show();
 					$dialogWrap.attr('data-dialog-id', dialogId).data('dialogOption', option);
 
 					option.callback.open();
