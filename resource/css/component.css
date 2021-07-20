@@ -806,7 +806,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .search-inner .search-form > div { display:table-cell; vertical-align:middle; }
 .search-inner .search-inp { padding:0 5px 0 0; width:100%; }
 .search-inner .inp { width:100%; }
-.search-inner .search-btns { }
+.search-inner .search-btns { white-space:nowrap; }
 .search-inner .search-btns .btn-base { margin-right:3px; }
 .search-inner .search-btns .btn-base:last-child { margin-right:0; }
 .btn-base.size-s { min-height:36px; line-height:36px; border-radius:18px;min-width:80px; padding:0 20px; font-size:14px;  }

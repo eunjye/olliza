@@ -577,6 +577,7 @@
 	.bbs-list .additional { font-size:14px; }
 	.bbs-list .additional > span { margin-bottom:5px; }
 
+	.search-inner .search-btns .btn-base { padding:0 10px; min-width:0; }
 
 
 }
