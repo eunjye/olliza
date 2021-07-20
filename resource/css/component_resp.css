@@ -229,7 +229,10 @@
 	.real-review { margin-bottom:60px; }
 	.cont-area.detail-body { padding:60px 0; }
 	.cont-area.detail-body .cont-grid { padding:50px 25px 70px; margin:0 25px; }
-	.category-area .menu { font-size:18px; }
+	.category-area .tit { display:block; margin-bottom:15px; }
+	.category-area .info { margin:0; }
+	.category-area .info:before { display:none; }
+	.category-area .menu { font-size:18px; margin:0; }
 
 	.cont-area.detail-body.no-realreview .cont-grid { margin-top:0; }
 
@@ -337,6 +340,11 @@
 
 
 	.btn-more { width:40px; height:40px; }
+
+	.btn-footer .btn-base { margin:0 3px; }
+	.bbs-write { border-radius:5px; }
+	.tbl-bbs th { font-size:14px; padding:10px 5px; }
+	.tbl-bbs td { font-size:14px; padding:10px 5px; }
 
 	.cont-grid { padding:0 25px; }
 
@@ -460,7 +468,6 @@
 	.search-inner .utils { flex:1 1 100%; text-align:left; }
 	.search-inner .search-form > div { padding-right:10px; }
 
-	.lock-key { display:inline-block; margin:10px 0 0; }
 
 	.period-area { white-space:nowrap;}
 	.class-box { padding:40px 10px; margin-left:-10px; margin-right:-10px; }
@@ -557,6 +564,7 @@
 	/* table */
 	.tbl-base th,
 	.tbl-base td { padding:10px 15px}
+	.lock-key { display:inline-block; margin:10px 0 0; }
 
 	.form-area.type-cert .img-certification { width:100%; }
 	.form-area.type-cert .img-certification img { width:100%; height:auto; }

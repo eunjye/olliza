@@ -767,17 +767,20 @@ fieldset:after { display:block; clear:both; content:""; }
 /* 마이페이지
 ==================== */
 .category-area { z-index:0; position:relative;  }
-.category-area .cont-grid { position:relative; min-height:180px; padding:35px 25px 35px 210px; text-align:center; color:#fff; }
-.category-area .cont-grid:before { z-index:-1; position:absolute; display:block; bottom:0; left:25%; content:""; }
-.category-area .tit { display:block; font-size:40px; font-weight:700; }
-.category-area .menu { min-width:170px; display:inline-block; padding:8px 15px 9px; border-radius:26px; margin-top:12px; border:1px solid #fff; font-size:24px; font-weight:700; }
-.category-area .info { display:block; font-size:24px; margin-top:12px; font-weight:700; }
+.category-area .cont-grid { position:relative; padding:30px 0 30px 210px; text-align:center; color:#fff; }
+.category-area .cont-grid:before { z-index:-1; position:absolute; display:block; bottom:0; left:25%; max-height:90%; background-size:contain; background-position:0 0; background-repeat:no-repeat; content:""; }
+.category-area .tit { vertical-align:middle; display:inline-block; font-size:40px; font-weight:700; }
+.category-area .menu { vertical-align:middle; min-width:170px; display:inline-block; padding:8px 15px 9px; border-radius:26px; margin-left:20px; border:1px solid #fff; font-size:24px; font-weight:700; }
+.category-area .info { vertical-align:middle; display:inline-block; font-size:20px; margin-left:10px; font-weight:700; }
+.category-area .info:before { display:inline-block; margin-right:10px; content:"|"; }
+.category-area .info span { display:inline-block}
+.category-area .info span + span:before { display:inline; content:" | "}
 .category-area.student { background:linear-gradient(to right, #ad9afd 0%, #a1a3f4 50%, #a2baeb 100%); }
 .category-area.teacher { background:linear-gradient(to right, #E29AFD 0%,  #B1A2EB 100%); }
 .category-area.etc { background:linear-gradient(to right, #9ac2fd 0%, #a2e6eb 100%); }
-.category-area.qna .cont-grid:before { background:url('../img/bg_qna.png') 0 0/auto auto no-repeat; width:223px; height:139px; }
-.category-area.review .cont-grid:before { background:url('../img/bg_review.png') 0 0/auto auto no-repeat; width:135px; height:118px; }
-.category-area.list .cont-grid:before { background:url('../img/bg_list.png') 0 0/auto auto no-repeat; width:265px; height:123px; }
+.category-area.qna .cont-grid:before { background-image:url('../img/bg_qna.png'); width:223px; height:139px; }
+.category-area.review .cont-grid:before { background-image:url('../img/bg_review.png'); width:135px; height:118px; }
+.category-area.list .cont-grid:before { background-image:url('../img/bg_list.png'); width:265px; height:123px; }
 
 .lnb-area .lnb-select { display:none; }
 .lnb-list li { margin-bottom:18px; }
