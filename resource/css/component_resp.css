@@ -271,6 +271,7 @@
 
 	.search-inner { flex-wrap:wrap; }
 	.search-inner > div { display:block; width:auto; flex:1 1 auto; }
+	.search-inner .search-inp { width:100%; }
 
 	.bbs-list .header { display:block; height:auto; padding:15px 20px 15px 70px; }
 	.bbs-list .item { position:relative; }
@@ -343,8 +344,8 @@
 
 	.btn-footer .btn-base { margin:0 3px; }
 	.bbs-write { border-radius:5px; }
-	.tbl-bbs th { font-size:14px; padding:10px 5px; }
-	.tbl-bbs td { font-size:14px; padding:10px 5px; }
+	.tbl-bbs th { font-size:14px; padding:10px; }
+	.tbl-bbs td { font-size:14px; padding:10px; }
 
 	.cont-grid { padding:0 25px; }
 
@@ -467,6 +468,7 @@
 
 	.search-inner .utils { flex:1 1 100%; text-align:left; }
 	.search-inner .search-form > div { padding-right:10px; }
+
 
 
 	.period-area { white-space:nowrap;}

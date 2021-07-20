@@ -725,7 +725,8 @@ fieldset:after { display:block; clear:both; content:""; }
 .tbl-bbs tr:first-child td,
 .tbl-bbs tr:first-child th { border-top:0; }
 .tbl-bbs td { border-top:1px solid #d2d2d2; padding:15px; vertical-align:middle; }
-.tbl-bbs .lb-chk.lock { margin-left:10px; }
+.tbl-bbs .select { margin-right:10px; }
+.tbl-bbs .lb-chk.lock { margin:5px 0; }
 
 .inp-lock { width:120px; }
 .lock-key { display:inline-block; border:1px solid #d2d2d2; padding:0 35px; line-height:36px; height:36px; text-align:center; font-size:14px; letter-spacing:0.4em; margin-left:20px; }
@@ -805,12 +806,14 @@ fieldset:after { display:block; clear:both; content:""; }
 .search-inner { display:flex; align-items:center; justify-content:space-between; }
 .search-inner > div { flex:0 0 auto; padding-right:20px; }
 .search-inner .select-area { width:120px; flex:0 0 auto; }
-.search-inner .search-form { flex:1 1 auto; display:table; }
+.search-inner .search-form { flex:1 1 auto; display:table;  }
 .search-area.history .search-inner .search-form { max-width:600px; }
+.search-area.history .search-inner .search-inp { width:100%; }
+.search-area.history .search-inner .search-btns { width:auto; }
 .search-inner .search-form > div { display:table-cell; vertical-align:middle; text-align:left; }
-.search-inner .search-inp { padding:0 20px 0 0; width:100%; }
+.search-inner .search-inp { padding:0 20px 0 0; width:500px; }
 .search-inner .inp { width:100%; }
-.search-inner .search-btns { white-space:nowrap; }
+.search-inner .search-btns { white-space:nowrap; width:50%; }
 .search-inner .search-btns .btn-base { margin-right:10px; }
 .search-inner .search-btns .btn-base:last-child { margin-right:0; }
 .btn-base.size-s { min-height:36px; line-height:36px; border-radius:18px;min-width:80px; padding:0 20px; font-size:14px;  }
@@ -822,7 +825,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .btn-base.sub4:hover { background:#909090; }
 .btn-base.sub:hover { color:#fff; background:#3d56b3 }
 .btn-base.sub { color:#fff; background:#4965ce }
-.search-inner .utils { flex:1 1 139px; text-align:right; }
+.search-inner .utils { flex:1 1 auto; text-align:right; white-space:nowrap; }
 
 .tbl-bbs .file-area { margin-top:10px; }
 .file-area .file { position:relative; display:inline-block; vertical-align:bottom; margin-right:10px; }
