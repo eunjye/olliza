@@ -92,7 +92,6 @@
 	.logo span { font-size:25px; }
 	.gnb-area .nav-d1 a { display:block; height:45px; line-height:43px; padding:0 25px; border:1px solid #9386d5; overflow:hidden; border-radius:23px; color:#9386d5; }
 	.nav-d1 { float:none; width:100%; padding:0 15px; font-size:15px; }
-	.nav-d1 > li:first-child { border-top:1px solid #e8e7e7; }
 	.nav-d1 > li { display:block; margin:12px 0 0; color:#000; font-size:20px; text-align:left; }
 	.nav-d1 > li > a { position:relative; font-size:15px; font-weight:700; text-align:center; }
 	.nav-d1 > li.point > a { background:url('../img/ico_logo_min.png') 20px center/17px auto no-repeat; }
@@ -101,7 +100,7 @@
 	.nav-d1 > li > a:after { position:absolute; right:15px; top:15px; display:block; width:10px; height:10px; border-top:1px solid #454545; border-right:1px solid #454545; margin:2px 4px 0 0; transform:rotate(135deg); content:""; }
 	.sub-menu { padding:0 20px; }
 	.sub-menu a { margin-top:10px; display:block; height:32px; line-height:30px; border-radius:16px; border:1px solid #9386d5; font-size:13px; color:#9386d5; font-weight:700; }
-	.sub-menu .point a { background:#6957D0; height:40px; line-height:38px; color:#fff; }
+	.sub-menu .point a { background:#6957D0; height:40px; line-height:38px; color:#fff; border-radius:20px; }
 	.nav-d1 > li > a:only-child:after { display:none; }
 	.nav-d1 > li.on > a { background:#0973BA; color:#fff; }
 	.nav-d1 > li.on > a:after { border-color:#fff; margin-top:8px; transform:rotate(-45deg); }
