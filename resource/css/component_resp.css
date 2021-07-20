@@ -262,7 +262,8 @@
 	.bbs-list[class*="type-"] .item { position:relative; }
 	.bbs-list[class*="type-"] .item .num { position:absolute; top:0; left:0; height:100%; min-width:50px; height:100%; line-height:1; padding:15px 10px; width:50px; }
 	.bbs-list[class*="type-"] .subject { display:block; width:auto; padding:10px 0 5px 0; }
-	.bbs-list[class*="type-"] .subject span { width:auto; max-width:calc(100% - 40px); height:auto; }
+	.bbs-list[class*="type-"] .subject span { width:auto; max-width:calc(100% - 40px); }
+	.bbs-list[class*="type-"] .item .class { padding-left:0; }
 	.bbs-list .is-lock .subject { padding:0 0 5px 30px; background-position:0 0; }
 	.bbs-list[class*="type-"] .additional { display:block; width:100%; flex-basis:100%; text-align:left; padding-right:10px; }
 	.bbs-list[class*="type-"] .additional > span { display:inline; width:auto; margin-right:10px; vertical-align:baseline; }
@@ -566,7 +567,7 @@
 	/* table */
 	.tbl-base th,
 	.tbl-base td { padding:10px 15px}
-	.lock-key { display:inline-block; margin:10px 0 0; }
+	.lock-key { display:block; width:127px; margin:10px 0 0; }
 
 	.form-area.type-cert .img-certification { width:100%; }
 	.form-area.type-cert .img-certification img { width:100%; height:auto; }
@@ -580,6 +581,7 @@
 	
 	/* subpages
 	================== */
+	.btn-footer { margin-top:30px; }
 	.detail-intro { padding:40px 25px 1px 25px; }
 	.real-review { margin-bottom:40px; }
 	.bbs-list .subject span { font-size:14px; }
