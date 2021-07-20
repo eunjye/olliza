@@ -268,7 +268,6 @@
 
 	.search-inner { flex-wrap:wrap; }
 	.search-inner > div { display:block; width:auto; flex:1 1 auto; }
-	.search-inner .utils { text-align:left; }
 
 	.bbs-list .header { display:block; height:auto; padding:15px 20px 15px 70px; }
 	.bbs-list .item { position:relative; }
@@ -457,6 +456,9 @@
 	.bbs-list.type-history .additional,
 	.bbs-list.type-history .status { line-height:0; }
 	.bbs-list.type-history .status .btn-base { display:block; margin:5px 0 0; }
+
+	.search-inner .utils { flex:1 1 100%; text-align:left; }
+	.search-inner .search-form > div { padding-right:10px; }
 
 	.lock-key { display:inline-block; margin:10px 0 0; }
 
