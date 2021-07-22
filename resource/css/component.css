@@ -293,20 +293,20 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .special-list li p { margin-top:30px; font-size:20px; color:#193e76; word-break:keep-all;}
 
 .main-teacher { background:#E4ECFC; }
-.main-teacher .cont-grid { padding:150px 0 90px; }
+.main-teacher .cont-grid { padding-top:150px; padding-bottom:90px; }
 .main-teacher .tit-d1 { color:#765df6; }
 .main-teacher .tit-d1:before { display:block; width:3px; height:50px; background:#777df8; margin:0 auto 10px; content:""; }
 .main-teacher .tit-d1 strong { font-weight:700; }
 .main-teacher .desc-d1 { margin-top:30px; color:#7660f6; font-weight:700; }
 .main-teacher .desc-d1 strong { color:#ff878f; }
-.main-teacher .tab-btns { margin:40px 0 20px; text-align:center; }
-.main-teacher .tab-btns > div { display:inline-block; margin:0 8px; }
-.main-teacher .tab-btns button { width:204px; }
+.tab-btns { margin:40px 0 20px; text-align:center; }
+.tab-btns > div { display:inline-block; margin:0 8px; }
+.tab-btns button { width:204px; }
 .main-teacher-area { }
 .main-teacher-area .desc-intro { text-align:center; color:#9386d5; font-size:16px; }
-.main-teacher-list { display:flex; margin-top:15px; justify-content:space-between; align-items:stretch; flex-wrap:wrap; }
+.main-teacher-list { display:flex; margin-top:15px; justify-content:flex-start; align-items:stretch; flex-wrap:wrap; }
 .main-teacher-list:after { display:block; clear:both; content:""; }
-.main-teacher-list > li { flex:1 1 25%; width:25%; margin-top:30px; padding-right:35px; }
+.main-teacher-list > li { flex:0 0 25%; width:25%; margin-top:30px; padding-right:35px; }
 .main-teacher-list > li > a { height:100%; position:relative; display:block; background:linear-gradient(to top, #b177f3 0%, #7c8af0 100%); padding:35px 15px 0 35px; border-radius:40px 0 40px 0; border:4px solid transparent; }
 .main-teacher-list > li > a:after { position:absolute; bottom:38px; left:30px; display:block; width:65px; height:65px; border-radius:50%; background:url('../img/btn_teacher_link.png') center center/65px auto no-repeat #6957d0; content:""; transition:transform ease-in .2s; }
 .main-teacher-list > li > a:hover:after { transform:translateX(5px); }
@@ -340,6 +340,13 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .slider-teacher .slick-arrow.slick-prev:hover { transform:translateX(-10px); }
 .slider-teacher .slick-arrow.slick-next:hover { transform:translateX(10px); }
 .slider-teacher .slick-arrow.slick-next { right:-50px; }
+
+.slider-teacher.no-slide { }
+.slider-teacher.no-slide .list-grid { display:flex; align-items:stretch; justify-content:flex-start; flex-wrap:wrap; margin:0 -17px; }
+.slider-teacher.no-slide .item { flex:0 0 25%; padding:15px 17px; }
+.slider-teacher.no-slide .slide { margin:0; height:100% !important; }
+.slider-teacher.no-slide .slide > a { display:flex; width:100%; }
+.slider-teacher.no-slide .cont { width:100%; }
 
 .btn-more-view { position:relative; display:inline-block; padding:0 50px; color:#193e76; font-size:20px; text-align:center; font-weight:700; }
 .btn-more-view:after { display:block; width:12px; height:28px; margin:0 auto; background:url('../img/btn_more_view.png') 0 0/12px auto no-repeat; content:""; transition:transform ease-in .2s; margin-top:5px; }
@@ -469,7 +476,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .btn-more-review:after { display:block; left:30px; bottom:15px; position:absolute; width:7px; height:7px; transform:rotate(135deg); border-top:1px solid #fff; border-right:1px solid #fff; content:""; }
 .btn-more-review:hover { background:#915fd3; }
 
-.cont-area.process { padding:120px 0; background:#e4ecfc; }
+.cont-area.process { padding:120px 0; background:#e4ecfc; overflow:hidden; }
 .cont-area.process .tit-d1 { margin-bottom:60px; font-size:56px; font-weight:700; color:#765df6; }
 .process-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
 .process-list > li { display:flex; align-items:center; position:relative; flex:0 1 33.333%; height:350px; color:#fff; background-position:center center; background-size:auto auto; background-repeat:no-repeat; }
@@ -918,6 +925,10 @@ fieldset:after { display:block; clear:both; content:""; }
 .post-header .util > span.status { color:#4965ce; }
 .post-body .text { padding:30px; font-size:16px; }
 .post-body .attach { padding:30px; border-top:2px solid #e7e7e7; }
+
+/* 선생님 목록
+================ */
+.teacher-subpage { padding:60px 0;  background:#E4ECFC; }
 
 /* wide */
 @media (min-width:1920px) {
