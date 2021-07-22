@@ -21,6 +21,9 @@ input, textarea { font:inherit; }
 .fc-primary { color:#0072bc !important; }
 .fc-warn { color:#fc1b1b !important; }
 
+.msg-error { color:#fc1b1b; margin-top:10px; }
+.msg-error:before { content:"*"; display:inline-block; vertical-align:middle; margin:4px 5px 0 0; }
+
 /* title */
 .tit-d1 { display:block; font-size:60px; text-align:center; }
 .tit-d2 { display:block; font-size:44px; font-weight:700; color:#000; text-align:center; margin-bottom:20px; }
@@ -826,11 +829,34 @@ fieldset:after { display:block; clear:both; content:""; }
 .btn-base.sub:hover { color:#fff; background:#3d56b3 }
 .btn-base.sub { color:#fff; background:#4965ce }
 .search-inner .utils { flex:1 1 auto; text-align:right; white-space:nowrap; }
+.btn-icon { height:36px; line-height:36px; border:1px solid #d2d2d2; border-radius:18px; font-size:14px; font-weight:400; text-align:center; min-height:0; padding:0 18px; line-height:18px; transition:background-color .2s ease-in; text-align:center; }
+.btn-icon.share { padding:0; height:36px; width:36px; }
+.btn-icon.share:before { margin:-2px 0 0; }
+.btn-icon:hover { background-color:#fafafa; }
 
+/* icons
+==================*/
+.ico { display:inline-block; vertical-align:middle; width:25px; height:25px; background-size:25px auto; background-repeat:no-repeat; background-image:url('../img/sp_ico_util.png'); }
+.btn-icon:before { display:inline-block; vertical-align:middle; width:25px; height:25px; margin:-2px 5px 0 0; background-size:25px auto; background-repeat:no-repeat; background-image:url('../img/sp_ico_util.png'); content:""; }
+.btn-icon.favorit:before,
+.ico-favorit { background-position:0 0; }
+.btn-icon.watch:before,
+.ico-watch { background-position:0 -25px; }
+.btn-icon.more:before,
+.ico-more { background-position:0 -50px; }
+.btn-icon.share:before,
+.ico-share { background-position:0 -75px; }
+.btn-icon.lock:before,
+.ico-lock { background-position:0 -100px; }
+
+.post-area .file-area .file { display:block; margin:10px 0 0; }
+.post-area .file-area .file:first-child { margin-top:0; }
 .tbl-bbs .file-area { margin-top:10px; }
 .file-area .file { position:relative; display:inline-block; vertical-align:bottom; margin-right:10px; }
 .file-area .file .thumb { display:inline-block; width:100px; height:60px; border:1px solid #d2d2d2; }
+.file-area .file .img { display:inline-block; border:1px solid #d2d2d2; }
 .file-area .file .thumb img { width:100%; height:100%; }
+.file-area .file a { text-decoration:underline; }
 .file-area .file .name { position:relative; }
 .file-area .file .btn-file-x { position:absolute; top:-5px; right:-5px; display:inline-block; width:25px; height:25px; background:url('../img/btn_img_x.png') 0 0/auto no-repeat; }
 .file-area .file .name + .btn-file-x { position:static; }
@@ -874,6 +900,24 @@ fieldset:after { display:block; clear:both; content:""; }
 .inp-period input { height:36px; font-size:14px; border-radius:18px; border:1px solid #d2d2d2; padding:0 13px; width:145px; background:url('../img/ico_datepicker.png') center right 10px/auto no-repeat #fff; box-sizing:border-box; }
 .history .search-inner .select-area { width:130px; }
 .history .search-inner .select-area select { width:100%; }
+
+/* Q&A 글쓰기
+============ */
+.post-area { margin-bottom:10px; }
+.post-upper { text-align:right; margin-bottom:10px; }
+.post-upper button { margin:0 4px; }
+.post-cont { border-radius:10px; overflow:hidden; border:1px solid #d2d2d2; }
+.post-header { display:table; width:100%; background:#e9edf6; border-bottom:1px solid #eaeaea; padding:0 5px; font-size:16px; }
+.post-header .tit { display:table-cell; padding:12px 0 12px 20px }
+.post-header .tit.type-lock:before { display:inline-block; width:25px; height:25px; background:url('../img/sp_ico_util.png') 0 -100px/25px auto no-repeat; content:""; margin:-2px 5px 0 0; vertical-align:middle; }
+.post-header .tit.type-lock { padding-left:50px; text-indent:-30px; }
+.post-header .tit .ico { margin:-4px 5px 0 0; }
+.post-header .util { display:table-cell; padding:12px 20px; text-align:right; white-space:nowrap; }
+.post-header .util > span { margin:0 18px; }
+.post-header .util > span:first-child { margin-left:0; }
+.post-header .util > span.status { color:#4965ce; }
+.post-body .text { padding:30px; font-size:16px; }
+.post-body .attach { padding:30px; border-top:2px solid #e7e7e7; }
 
 /* wide */
 @media (min-width:1920px) {

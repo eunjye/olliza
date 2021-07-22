@@ -504,6 +504,18 @@
 	.ui-tab.type2 .ui-tab-btn { height:40px; line-height:42px; }
 	.ui-tab-btn { margin:10px; padding:0 10px; }
 
+
+	/* Q&A 등록
+	================ */
+	.post-header { display:block; padding:0; }
+	.post-header .tit { display:block; padding:15px 20px 10px; }
+	.post-header .tit.type-lock { padding-left:45px; }
+	.post-header .util { display:block; text-align:left; padding:0 20px 15px; }
+	.post-header .util > span { margin:0 5px; }
+	.post-body .text { padding:20px; }
+	.post-body .attach { padding:20px; }
+	.post-body .attach img { max-width:100%; }
+
 }
 /* only mo */
 @media (min-width:501px) {
