@@ -294,6 +294,9 @@
 	.history .search-inner .filter-area{ width:auto; flex:0 0 auto; }
 	.period-area { white-space:normal;}
 	.period-area input:first-child { margin-bottom:5px; }
+	
+	.form-util .btn-search { margin-top:8px; text-align:left; }
+	.form-util .btn-search span { vertical-align:middle; display:inline-block; }
 }
 
 @media (max-width:765px) {
@@ -524,6 +527,29 @@
 	.post-body .attach { padding:20px; }
 	.post-body .attach img { max-width:100%; }
 
+
+	/* 약관동의 */
+	/* .form-row { flex-wrap:wrap; } */
+	.join-box { padding:40px 0; }
+	.form-item .inp { width:100%; }
+	.form-area { flex:1 1 auto; }
+	.form-area .form-item { flex:1 1 auto; }
+	.form-area .form-tit { flex:0 0 70px; width:70px; padding-left:10px; padding-right:10px; }
+	.form-util .btn-search:before { width:25px; height:25px; background-size:50%; vertical-align:middle; }
+	.form-area .form-item.type-unit { flex:0 0 auto; }
+	.form-item .rdo-area { margin:13px 10px; }
+	.rdo-area .rdo-item { margin-left:10px; }
+	.form-item .inp { height:50px; font-size:14px; }
+	.form-area .form-item:only-child .form .inp { width:100%; }
+	.form-item { flex-wrap:wrap; }
+	.form-item.type-email .form:first-child { width:calc(50% - 15px); }
+	.form-item.type-email .divide + .form { width:calc(50% - 15px); }
+	.form-item.type-email .form:last-child { width:calc(100% + 70px); margin-left:-70px; margin-top:10px; }
+	.form-item.type-email .inp { width:100%; }
+	.form-item .select { font-size:14px; }
+	.form-item.type-email .select { width:100%; }
+	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-bottom:-4px; margin-left:10px; }
+	.agree-area .allchk { margin-bottom:15px; }
 }
 /* only mo */
 @media (min-width:501px) {

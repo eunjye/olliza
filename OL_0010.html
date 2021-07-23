@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					
+					<h2 class="tit-d2">회원가입</h2>
+					<div class="join-box join">
+						<div class="join-grid">
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>아이디</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="text" class="inp" placeholder="영문자 4~15자리 이하">
+										</div>
+										<p class="msg-error">아이디가 짧습니다. </p> <!-- [D] error MSG -->
+									</div>
+								</div>
+								<div class="form-util">
+									<button type="button" class="btn-search"><span>아이디 <br class="only-resp">중복확인</span></button>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>비밀번호</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="password" class="inp" placeholder="영문자+숫자조합 8~12자리 이하">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>비밀번호 <br class="only-resp">확인</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="password" class="inp" placeholder="영문자+숫자조합 8~12자리 이하">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>이름</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="text" class="inp" placeholder="이름 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>학생구분</span></div>
+									<div class="form-item">
+										<div class="form no-bg">
+											<div class="rdo-area">
+												<div class="rdo-item">
+													<input type="radio" id="rdoStudent1" name="rdoStudent">
+													<label for="rdoStudent1">초등학생</label>
+												</div>
+												<div class="rdo-item">
+													<input type="radio" id="rdoStudent2" name="rdoStudent">
+													<label for="rdoStudent2">중학생</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>학년</span></div>
+									<div class="form-item type-unit">
+										<div class="form">
+											<div class="inp-area type-unit type-class">
+												<input type="tel" class="inp">
+												<span class="unit">학년</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>휴대전화<br class="only-resp">(학생)</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="tel" class="inp" placeholder="휴대폰번호 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>휴대전화<br class="only-resp">(학부모)</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="tel" class="inp" placeholder="휴대폰번호 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>주소</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="text" class="inp">
+										</div>
+									</div>
+								</div>
+								<div class="form-util">
+									<button type="button" class="btn-search"><span>우편번호 검색</span></button>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-item">
+										<div class="form">
+											<input type="text" class="inp" placeholder="상세주소입력">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>이메일</span></div>
+									<div class="form-item type-email">
+										<div class="form">
+											<input type="text" class="inp">
+										</div>
+										<div class="divide">@</div>
+										<div class="form">
+											<input type="text" class="inp">
+										</div>
+										<div class="form">
+											<select class="select">
+												<option>직접입력</option>
+												<option>naver.com</option>
+												<option>daum.net</option>
+												<option>nate.com</option>
+												<option>gmail.com</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="agree-area">
+								<div class="allchk">
+									<div class="chk-item">
+										<input type="checkbox" id="chkAgreeall">
+										<label for="chkAgreeall">약관동의</label>
+									</div>
+								</div>
+								<ul class="agree-list">
+									<li>
+										<div class="agree-header">
+											<div class="chk-item">
+												<input type="checkbox" id="chk1">
+												<label for="chk1">회원이용약관</label>
+											</div>
+											<button type="button" class="btn-agree-more"><span>약관보기</span></button>
+										</div>
+										<div class="agree-body">
+											<div class="inner">
+												<p>약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 </p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="agree-header">
+											<div class="chk-item">
+												<input type="checkbox" id="chk2">
+												<label for="chk2">개인정보보호정책</label>
+											</div>
+											<button type="button" class="btn-agree-more"><span>약관보기</span></button>
+										</div>
+										<div class="agree-body">
+											<div class="inner">
+												<p>약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 </p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="agree-header">
+											<div class="chk-item">
+												<input type="checkbox" id="chk3">
+												<label for="chk3">개인정보 수집이용</label>
+											</div>
+											<button type="button" class="btn-agree-more"><span>약관보기</span></button>
+										</div>
+										<div class="agree-body">
+											<div class="inner">
+												<p>약관 내용 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 약관 내용 어쩌고 저쩌고 </p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="btn-area tac">
+								<a href="#" class="btn-base primary type-arrow"><span>회원가입하고 성적올리기</span></a> <!-- [D] 비활성화 상태 : .disabled 클래스 추가 -->
+							</div>
+							<div class="btn-area tac">
+								<a href="#" class="btn-base primary type-arrow disabled"><span>회원가입하고 성적올리기</span></a>
+							</div>
+
+
+						</div>
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+						$('.btn-agree-more').on('click', function(){
+							var $el = $(this).closest('li');
+							var $body = $el.find('.agree-body');
+							if ($el.hasClass('open')) {
+								$body.stop().slideUp(200);
+							} else {
+								$body.stop().slideDown(200);
+							}
+							$el.toggleClass('open');
+						})
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>
