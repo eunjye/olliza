@@ -297,6 +297,9 @@
 	
 	.form-util .btn-search { margin-top:8px; text-align:left; }
 	.form-util .btn-search span { vertical-align:middle; display:inline-block; }
+	
+	.form-item .form .text { padding:16px 15px 14px; } 
+	.form-item .rdo-area { margin:16px 15px 14px; }
 }
 
 @media (max-width:765px) {
@@ -539,7 +542,7 @@
 	.form-util .btn-search:before { width:25px; height:25px; background-size:50%; vertical-align:middle; }
 	.form-area .form-item.type-unit { flex:0 0 auto; }
 	.form-item .rdo-area { margin:13px 10px; }
-	.rdo-area .rdo-item { margin-left:10px; }
+	.rdo-area .rdo-item { margin-right:10px; }
 	.form-item .inp { height:50px; font-size:14px; }
 	.form-area .form-item:only-child .form .inp { width:100%; }
 	.form-item { flex-wrap:wrap; }
@@ -549,8 +552,10 @@
 	.form-item.type-email .inp { width:100%; }
 	.form-item .select { font-size:14px; }
 	.form-item.type-email .select { width:100%; }
+	.form-area .form-item.type-text { max-width:100%; }
 	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-top:0; margin-left:10px; }
 	.btn-base.primary.type-arrow { padding-top:12px; }
+	.btn-base.primary.type-arrow.disabled { padding-top:10px; }
 	.agree-area .allchk { margin-bottom:15px; }
 	.login .btn-base.primary.type-arrow span { margin-left:26px; }
 	.login-txt { font-size:16px; }
