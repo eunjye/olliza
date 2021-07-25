@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+
+			<div class="category-area etc qna">
+				<div class="cont-grid">
+					<h2 class="tit">과제 / 학습 Q&A</h2>
+					<span class="info"><span>고객센터 02-6333-1063</span><span>평일 AM 09:00~PM 17:00</span></span>
+				</div>
+			</div>
+
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					<div class="lnb-area">
+						<ul class="lnb-list">
+							<li class="notice">
+								<a href="#"><span>공지사항</span></a>
+							</li>
+							<li class="faq">
+								<a href="#"><span>자주하는 <br>질문</span></a>
+							</li>
+							<li class="qna current">
+								<a href="#"><span>과제 / 학습<br>Q&A</span></a>
+							</li>
+							<li class="review">
+								<a href="#"><span>수강후기</span></a>
+							</li>
+						</ul>
+						
+						<div class="lnb-select">
+							<select>
+								<option>공지사항</option>
+								<option>자주하는 질문</option>
+								<option selected>과제 / 학습 Q&A</option>
+								<option>수강후기</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="cont-inner size-s">
+            <button type="button" class="btn-base sub" onclick="
+              window.olliza.dialog.open({
+                targetDialog: {
+                  url: './P_OL_0004.html',
+                },
+                position: 'center',
+                full: true,
+                callback: {
+                  open: function(){
+                    console.log('열림')
+                  },
+                  close: function(){
+                    console.log('닫힘')
+                  }
+                }
+              })
+            "><span>팝업 열기</span></button>
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+						window.olliza.dialog.open({
+                targetDialog: {
+                  url: './P_OL_0004.html',
+                },
+                position: 'center',
+                full: true,
+                callback: {
+                  open: function(){
+                    console.log('열림')
+                  },
+                  close: function(){
+                    console.log('닫힘')
+                  }
+                }
+              })
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>
