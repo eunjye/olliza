@@ -35,41 +35,57 @@
       <div class="cont-area subpage-area login">
         <div class="cont-grid">
 					
-					<h2 class="tit-d2">회원가입</h2>
+					<h2 class="tit-d2">로그인</h2>
 					<div class="join-box join">
 						<div class="join-grid">
-							<div class="login-txt">
-								감사합니다.<br>
-								올리자 회원이 되셨습니다.
-							</div>
+							<div class="login-txt fc-warn">회원님은 패스워드를 연속으로 5회 잘못 입력하셨기 때문에 11초 후에 다시 로그인 시도가 가능합니다</div> <!-- [D] error MSG -->
 
-							
 							<div class="form-row">
-								<div class="form-area full">
+								<div class="form-area">
 									<div class="form-tit"><span>아이디</span></div>
-									<div class="form-item type-text">
+									<div class="form-item">
 										<div class="form">
-											<span class="text">abc1234</span>
+											<input type="text" class="inp" placeholder="아이디 입력">
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="form-row">
-								<div class="form-area full">
-									<div class="form-tit"><span>이름</span></div>
-									<div class="form-item type-text">
+								<div class="form-area">
+									<div class="form-tit"><span>비밀번호</span></div>
+									<div class="form-item">
 										<div class="form">
-											<span class="text">홍길동</span>
+											<input type="password" class="inp" placeholder="비밀번호 입력">
 										</div>
 									</div>
 								</div>
 							</div>
-
 
 							<div class="btn-area tac">
-								<a href="#" class="btn-base primary type-arrow"><span>로그인</span></a>
+								<a href="#" class="btn-base primary type-arrow disabled"><span>로그인</span></a> <!-- [D] 비활성화 상태 : .disabled 클래스 추가 -->
 							</div>
-							
+							<div class="login-util">
+								<div class="rdo-area">
+									<div class="chk-item">
+										<input type="checkbox" id="chk1">
+										<label for="chk1">자동로그인</label>
+									</div>
+									<div class="chk-item">
+										<input type="checkbox" id="chk2">
+										<label for="chk2">아이디저장</label>
+									</div>
+								</div>
+
+								<div class="link">
+									<a href="#" class="btn-link2"><span>아이디/비밀번호 찾기</span></a>
+								</div>
+							</div>
+
+							<div class="btn-area tac">
+								<a href="#" class="btn-base primary type-arrow"><span>회원가입</span></a>
+							</div>
+
+
 						</div>
 					</div>
         </div>
@@ -142,7 +158,6 @@
 					</div>
 				</div>
 			</div>
-
 
 
       <script type="text/javascript">

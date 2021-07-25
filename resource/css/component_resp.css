@@ -570,6 +570,12 @@
 	.agree-area .allchk { margin-bottom:15px; }
 	.login .btn-base.primary.type-arrow span { margin-left:26px; }
 	.login-txt { font-size:16px; }
+
+	
+	.terms-area { padding:0 25px; }	
+	.terms-area .tit1 { font-size:18px; font-weight:700; margin:15px 0 10px; }
+	.terms-area .tit2 { font-size:16px; margin:10px 0 5px;  }
+
 }
 /* only mo */
 @media (min-width:501px) {
@@ -579,6 +585,10 @@
 /* mobile */
 @media (max-width:500px) {
 	
+	.btn-link2 { font-size:14px; }
+	.login-util .rdo-area { float:none; }
+	.login-util .link { float:none; margin-top:10px; }
+
 	.dialog-body { padding:30px 25px; }
 	.dialog-tit { margin:0; font-size:20px; }
 	.dialog-banner { margin:20px -25px; }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+      <div class="cont-area subpage-area login-find">
+        <div class="cont-grid">
+					
+					<h2 class="tit-d2">아이디/비밀번호 찾기</h2>
+					<div class="join-box join">
+						<div class="join-grid">
+							<div class="login-txt">아이디/비밀번호는 가입시 등록한 메일 주소로 알려드립니다.<br>가입할때 등록한 메일 주소를 입력하고 “아이디/비밀번호 찾기”버튼을 클릭해주세요.</div>
+
+							<div class="form-row">
+								<div class="form-area full">
+									<div class="form-tit"><span>이름</span></div>
+									<div class="form-item">
+										<div class="form">
+											<input type="text" class="inp" placeholder="이름 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-area">
+									<div class="form-tit"><span>이메일</span></div>
+									<div class="form-item type-email">
+										<div class="form">
+											<input type="text" class="inp">
+										</div>
+										<div class="divide">@</div>
+										<div class="form">
+											<input type="text" class="inp">
+										</div>
+										<div class="form">
+											<select class="select">
+												<option>직접입력</option>
+												<option>naver.com</option>
+												<option>daum.net</option>
+												<option>nate.com</option>
+												<option>gmail.com</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="btn-area tac">
+								<a href="#" class="btn-base primary type-arrow disabled"><span>아이디/비밀번호 찾기</span></a> <!-- [D] 비활성화 상태 : .disabled 클래스 추가 -->
+							</div>
+
+						</div>
+					</div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>
