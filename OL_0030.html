@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="eduTV 올리자 홈페이지">
+  <meta name="keywords" content="eduTV, 올리자, eduTV 올리자, 올리자 홈페이지">
+  <meta property="og:image" content="./resource/img/logo.png">
+
+  <title>마이페이지 Q&A | 올리자 TERASTUDY</title>
+
+  <link rel="stylesheet" href="./resource/css/app.css">
+
+  <script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script src="./resource/js/lib/bluebird.min.js"></script>
+  <script src="./resource/js/lib/video.min.js"></script>
+  <script src="./resource/js/lib/slick.min.js"></script>
+  <script src="./resource/js/common.js"></script>
+</head>
+
+<body class="is-home">
+  <main id="wrap">
+
+    <header class="header-area"></header>
+
+    <!-- [Start] main-area -->
+    <section class="main-area" id="main">
+
+			<div class="category-area etc notice">
+				<div class="cont-grid">
+					<h2 class="tit">수강후기</h2>
+					<span class="info"><span>고객센터 02-6333-1063</span><span>평일 AM 09:00~PM 17:00</span></span>
+				</div>
+			</div>
+
+      <div class="cont-area subpage-area">
+        <div class="cont-grid">
+					<div class="lnb-area">
+						<ul class="lnb-list">
+							<li class="notice current">
+								<a href="#"><span>공지사항</span></a>
+							</li>
+							<li class="faq">
+								<a href="#"><span>자주하는 <br>질문</span></a>
+							</li>
+							<li class="qna">
+								<a href="#"><span>과제 / 학습<br>Q&A</span></a>
+							</li>
+							<li class="review">
+								<a href="#"><span>수강후기</span></a>
+							</li>
+						</ul>
+						
+						<div class="lnb-select">
+							<select>
+								<option selected>공지사항</option>
+								<option>자주하는 질문</option>
+								<option>과제 / 학습 Q&A</option>
+								<option>수강후기</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="cont-inner size-s">
+						<div class="search-area">
+							<div class="search-inner">
+								<div class="select-area">
+									<select class="select">
+										<option value="">전체보기</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
+								</div>
+								<div class="search-form">
+									<div class="search-inp">
+										<input type="text" class="inp size-s" placeholder="제목/내용 입력" title="제목/내용 입력">
+									</div>
+									<div class="search-btns">
+										<button type="button" class="btn-base sub2 size-s"><span>초기화</span></button>
+										<button type="button" class="btn-base sub3 size-s"><span>조회</span></button>
+									</div>
+								</div>
+								<div class="utils">
+									<button type="button" class="btn-base sub size-s"><span>수강후기 남기기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="bbs-area">
+							<div class="bbs-upper type-review">
+								<ul>
+									<li class="num">번호</li>
+									<li class="class">구분</li>
+									<li class="teacher">선생님</li>
+									<li class="period">수강기간</li>
+									<li class="subject">평가내용(제목/내용)</li>
+									<li class="author">수강생</li>
+									<li class="date">등록일</li>
+								</ul>
+							</div>
+							<ul class="bbs-list type-review">
+	
+								<li class="item"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">100</strong>
+										<span class="class">영어</span>
+										<span class="teacher">이재진</span>
+										<span class="period">2021.01.01-2021.06.30</span>
+										<span class="subject">
+											<span class="score-area score2"></span> <!-- [D] 별점에 따라  score0 ~ score5 클래스 변경 -->
+											<span>선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요 선생님 덕분에 수학에 흥미를 놓치지 않았어요</span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+										</div>
+									</a>
+								</li>
+								<li class="item"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">99</strong>
+										<span class="class">영어</span>
+										<span class="teacher">이재진</span>
+										<span class="period">2021.01.01-2021.06.30</span>
+										<span class="subject">
+											<span class="score-area score5"></span> <!-- [D] 별점에 따라  score0 ~ score5 클래스 변경 -->
+											<span>선생님 덕분에 수학에 흥미를 놓치지 않았어요 </span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+										</div>
+									</a>
+								</li>
+								<li class="item"> 
+									<a href="javascript:void(0);" class="header">
+										<strong class="num">98</strong>
+										<span class="class">영어</span>
+										<span class="teacher">이재진</span>
+										<span class="period">2021.01.01-2021.06.30</span>
+										<span class="subject">
+											<span class="score-area score5"></span> <!-- [D] 별점에 따라  score0 ~ score5 클래스 변경 -->
+											<span>선생님 덕분에 수학에 흥미를 놓치지 않았어요</span><i class="comment">[1]</i></span>
+										<div class="additional">
+											<span class="author">홍길동</span>
+											<span class="date">2021-07-01</span>
+										</div>
+									</a>
+								</li>
+								<!-- [Start]] 내역 없을 시 -->
+								<li class="item nodata2">
+									<p>내역이 없습니다.</p>
+								</li>
+								<!-- // [End] 내역 없을 시 -->
+							</ul>
+							<!-- [S] paging -->
+							<div class="paging-area">
+								<a href="#" class="btn-jump first disabled"><span>처음 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<a href="#" class="btn-jump prev disabled"><span>이전 페이지</span></a> <!-- [D] 비활성화 : disabled 클래스 추가 -->
+								<div class="paging-link">
+									<a href="#" class="current"><span>1</span></a> <!-- [D] 현재 페이징에 current 클래스 추가 -->
+									<a href="#"><span>2</span></a>
+									<a href="#"><span>3</span></a>
+									<a href="#"><span>4</span></a>
+									<a href="#"><span>5</span></a>
+									<a href="#"><span>6</span></a>
+									<a href="#"><span>7</span></a>
+									<a href="#"><span>8</span></a>
+									<a href="#"><span>9</span></a>
+									<a href="#"><span>10</span></a>
+								</div>
+								<div class="paging-fraction">
+									<span class="current">1</span>
+									<i>/</i>
+									<span class="all">5</span>
+								</div>
+								<a href="#" class="btn-jump next"><span>다음 페이지</span></a>
+								<a href="#" class="btn-jump last"><span>마지막 페이지</span></a>
+	
+								<button type="button" class="btn-more-view2"><span>더 보기</span></button>
+							</div>
+							<!-- // [E] paging -->
+						</div>
+					</div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        ; (function ($, win, doc, undefined) {
+          $(doc).on('ready.olliza', function () {
+
+
+          });
+        })(jQuery, window, document);
+      </script>
+    </section>
+    <!-- // [End] main-area -->
+    <footer class="footer-area"></footer>
+
+  </main>
+</body>
+
+</html>

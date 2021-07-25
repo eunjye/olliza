@@ -821,6 +821,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .category-area.review .cont-grid:before { background-image:url('../img/bg_review.png'); width:135px; height:118px; }
 .category-area.list .cont-grid:before { background-image:url('../img/bg_list.png'); width:265px; height:123px; }
 .category-area.edit .cont-grid:before { background-image:url('../img/bg_edit.png'); width:209px; height:125px; }
+.category-area.notice .cont-grid:before { background-image:url('../img/bg_notice.png'); width:109px; height:153px; }
 
 .lnb-area .lnb-select { display:none; }
 .lnb-list li { margin-bottom:18px; }
@@ -833,6 +834,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .lnb-list li.review a span:after { background-image:url('../img/lnb_review.png'); }
 .lnb-list li.edit a span:after { background-image:url('../img/lnb_edit.png'); }
 .lnb-list li.list a span:after { background-image:url('../img/lnb_list.png'); }
+.lnb-list li.notice a span:after { background-image:url('../img/lnb_notice.png'); }
 .lnb-list li.current a { padding:60px 5px 20px; background:#6957d0; border-color:transparent; height:auto; cursor:default; pointer-events:none; }
 .lnb-list.teacher li.current a { background:#CA8EF9; }
 .lnb-list li.current a span { color:#fff; }
