@@ -69,6 +69,26 @@
 					</div>
 
 					<div class="cont-inner size-s">
+							<!-- 
+								실제 팝업 컨텐츠는 P_OL_0038.html 안에 있습니다.
+								팝업 열 때 다음 함수를 이용해주세요.
+
+								window.olliza.dialog.open({
+									targetDialog: {
+										url: './P_OL_0038.html',
+									},
+									position: 'center',
+									full: true,
+									callback: {
+										open: function(){
+											//console.log('열림')
+										},
+										close: function(){
+											//console.log('닫힘')
+										}
+									}
+								}) 
+							-->
             <button type="button" class="btn-base sub" onclick="
               window.olliza.dialog.open({
                 targetDialog: {
@@ -95,7 +115,21 @@
       <script type="text/javascript">
         ; (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
-
+						window.olliza.dialog.open({
+                targetDialog: {
+                  url: './P_OL_0038.html',
+                },
+                position: 'center',
+                full: true,
+                callback: {
+                  open: function(){
+                    console.log('열림')
+                  },
+                  close: function(){
+                    console.log('닫힘')
+                  }
+                }
+              })
 
           });
         })(jQuery, window, document);

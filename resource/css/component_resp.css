@@ -564,7 +564,7 @@
 	.form-item .select { font-size:14px; }
 	.form-item.type-email .select { width:100%; }
 	.form-area .form-item.type-text { max-width:100%; }
-	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-top:0; margin-left:10px; }
+	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-top:-15px; margin-left:10px; }
 	.btn-base.primary.type-arrow { padding-top:12px; }
 	.btn-base.primary.type-arrow.disabled { padding-top:10px; }
 	.agree-area .allchk { margin-bottom:15px; }

@@ -52,9 +52,9 @@ input[type="password"] { font-family:Arial; }
 .btn-base.primary:hover span { color:#9386d5; }
 .btn-base.primary:hover:before { opacity:1; }
 .btn-base.primary.disabled { cursor:default; pointer-events:none; color:#b5bdea; background:none !important; border:2px solid #b5bdea; padding:11px 13px 12px; }
-.btn-base.primary.type-arrow:after { z-index:1; position:relative; float:right; display:block; width:26px; height:26px; background:url(../img/ico_arrowbtn3.png) 0 0/auto auto no-repeat; content:""; margin:0 -10px 0 35px; transition:all ease-in .2s; opacity:1; }
+.btn-base.primary.type-arrow { padding:13px 65px 12px 35px; font-size:20px;   }
+.btn-base.primary.type-arrow:after { z-index:1; position:absolute; right:20px; top:50%; margin-top:-13px; display:block; width:26px; height:26px; background:url(../img/ico_arrowbtn3.png) 0 0/auto auto no-repeat; content:""; transition:all ease-in .2s; opacity:1; }
 .btn-base.primary.type-arrow.disabled:after { background-image:url('../img/ico_arrowbtn_disabled.png'); }
-.btn-base.primary.type-arrow { padding:17px 15px 12px; font-size:20px; padding-left:30px; padding-right:30px;  }
 .btn-base.primary.type-arrow.disabled { padding-top:15px; padding-bottom:10px; }
 
 .btn-search:before { width:41px; height:41px; background:url('../img/btn_search.png') center/auto auto no-repeat #4965CE; border-radius:50%; transition:background-color ease-in .2s; content:""; display:inline-block; vertical-align:middle;}
@@ -102,8 +102,9 @@ textarea { resize:none; }
 textarea.inp { line-height:1.4em; padding:25px; }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
-input::placeholder, select::placeholder { color:#929292; font-family:'Elice'; }
+input::placeholder, select::placeholder, textarea::placeholder { color:#929292; font-family:'Elice'; }
 .inp { display:inline-block; vertical-align:middle; min-height:50px; padding:0 15px; background:#fff; font-size:18px; border-radius:25px; border:1px solid #d2d2d2; color:#252525; box-sizing:border-box; -webkit-appearance: none; }
+textarea.inp { padding:10px 15px; line-height:1.4; }
 .inp:disabled { background-color:#d7daec !important; }
 .inp.inp-full { display:block; width:100%; }
 .inp.type_line { background:#fff; border:1px solid #d2d2d2; }
@@ -1019,7 +1020,6 @@ fieldset:after { display:block; clear:both; content:""; }
 .form-item .form .text { display:block; width:100%; padding:14px 15px 12px; text-align:center; }
 .form-item .form.disabled { background:#d7daec; }
 
-.login .btn-base.primary.type-arrow span { margin-left:55px; }
 .login-txt { font-size:20px; text-align:center; margin-bottom:30px; }
 .login .form-area { max-width:395px; margin:0 auto; }
 .form-area .form-item.type-text { max-width:300px; flex:1 1 100%; }
@@ -1033,12 +1033,12 @@ fieldset:after { display:block; clear:both; content:""; }
 /* 약관동의 */
 .agree-area { margin-top:25px; }
 .agree-area .allchk { margin-bottom:25px; }
-.agree-list { border-radius:10px; border:1px solid #c9cde3; background:#fff; }
+.agree-list { margin-top:10px; border-radius:10px; border:1px solid #c9cde3; background:#fff; }
 .agree-list .agree-header { justify-content:space-between; align-items:center; display:flex; border-bottom:1px solid #c9cde3; }
 .agree-list > li:last-child .agree-header { border-bottom:0; }
 .btn-agree-more:after { display:inline-block; width:8px; height:8px; border-top:2px solid #252525; border-right:2px solid #252525; transform:rotate(135deg); content:""; margin:-6px 0 0 10px; transition:all ease-in .2s; vertical-align:middle; }
-.agree-list .chk-item label { padding:18px 0 18px 25px; }
-.agree-list .btn-agree-more { padding:18px 25px; }
+.agree-list .chk-item label { display:block; padding:18px 0 18px 25px; }
+.agree-list .btn-agree-more { flex:0 0 auto; padding:18px 25px 18px 10px; }
 .agree-list li .agree-body { display:none; border-bottom:1px solid #c9cde3; padding:20px 30px; max-height:200px; overflow:auto; font-size:12px; }
 .agree-list li .agree-body p { line-height:1.6; }
 .agree-list li.open .agree-body { display:block; }
@@ -1066,7 +1066,6 @@ fieldset:after { display:block; clear:both; content:""; }
 .payment-footer .cost .result { display:block; margin-top:5px; }
 .payment-footer .cost .result strong { display:inline-block; font-weight:700; font-size:30px; vertical-align:middle; margin-top:-10px; }
 .payment-footer .btns { flex:0 0 auto; }
-.payment-footer .btn-base.primary.type-arrow:after { margin-left:10px; }
 
 /* [P] 시간표
 ================ */
@@ -1095,6 +1094,13 @@ fieldset:after { display:block; clear:both; content:""; }
 .timetable-area .paging-link { margin:0; }
 .timetable-area .btn-jump { margin:0 2px; }
 .timetable-area .paging-link a { width:20px; }
+
+/* [P] 선생님 지원하기
+=============== */
+.recruit-area .btn-area { margin-top:30px; }
+.recruit-area textarea.inp { height:130px; }
+.recruit-area .btn-area .btn-base { max-width:320px; width:100%; }
+.recruit-area .form-area { background-color:#fff; }
 
 /* wide */
 @media (min-width:1920px) {
