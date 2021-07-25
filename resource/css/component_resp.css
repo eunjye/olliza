@@ -234,7 +234,7 @@
 	.detail-intro .intro-area .inner.img { position:absolute; width:270px; right:25px; bottom:-1px; }
 	.detail-intro .intro-area .inner.teacher { min-height:200px; padding-bottom:40px; padding-top:0; }
 	.real-review { margin-bottom:60px; }
-	.cont-area.detail-body { padding:60px 0; }
+	/* .cont-area.detail-body { padding:60px 0; } */
 	.cont-area.detail-body .cont-grid { padding:50px 25px 70px; margin:0 25px; }
 	.category-area .tit { display:block; margin-bottom:15px; }
 	.category-area .info { margin:0; }
