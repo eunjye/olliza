@@ -298,7 +298,7 @@
 	.period-area { white-space:normal;}
 	.period-area input:first-child { margin-bottom:5px; }
 	
-	.form-util .btn-search { margin-top:8px; text-align:left; }
+	.form-util .btn-search { margin-top:13px; text-align:left; }
 	.form-util .btn-search span { vertical-align:middle; display:inline-block; }
 	
 	.form-item .form .text { padding:16px 15px 14px; } 
@@ -547,6 +547,7 @@
 	.form-item .rdo-area { margin:13px 10px; }
 	.rdo-area .rdo-item { margin-right:10px; }
 	.form-item .inp { height:50px; font-size:14px; }
+	.form-item .inp::placeholder { font-size:14px; }
 	.form-area .form-item:only-child .form .inp { width:100%; }
 	.form-item { flex-wrap:wrap; }
 	.form-item.type-email .form:first-child { width:calc(50% - 15px); }
