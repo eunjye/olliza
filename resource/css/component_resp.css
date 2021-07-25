@@ -308,6 +308,7 @@
 	p.bul-dot:before,
 	ul.bul-dot > li:before { margin-top:-3px; }
 
+
 	.desc-d1 { font-size:16px; }
 	.tit-d1 { font-size:24px; }
 	.tit-d2 { font-size:20px; margin-bottom:15px; }
@@ -548,8 +549,11 @@
 	.form-item.type-email .inp { width:100%; }
 	.form-item .select { font-size:14px; }
 	.form-item.type-email .select { width:100%; }
-	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-bottom:-4px; margin-left:10px; }
+	.btn-base.primary.type-arrow:after { width:30px; height:30px; background-size:contain; margin-top:0; margin-left:10px; }
+	.btn-base.primary.type-arrow { padding-top:12px; }
 	.agree-area .allchk { margin-bottom:15px; }
+	.login .btn-base.primary.type-arrow span { margin-left:26px; }
+	.login-txt { font-size:16px; }
 }
 /* only mo */
 @media (min-width:501px) {

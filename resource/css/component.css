@@ -51,9 +51,9 @@ input[type="password"] { font-family:Arial; }
 .btn-base.primary:hover:before { opacity:1; }
 .btn-base.primary.disabled { cursor:default; pointer-events:none; color:#b5bdea; background:none !important; border:2px solid #b5bdea; padding:11px 13px 12px; }
 .btn-base.primary.type-arrow.disabled:after { display:none; }
-.btn-base.primary.type-arrow:after { display:inline-block; width:37px; height:37px; background:url(../img/ico_arrowbtn.png) 0 0/auto auto no-repeat; content:""; vertical-align:middle; margin:-4px -10px 0 35px; transition:all ease-in .2s; }
+.btn-base.primary.type-arrow:after { float:right; display:block; width:37px; height:37px; background:url(../img/ico_arrowbtn.png) 0 0/auto auto no-repeat; content:""; margin:-4px -10px 0 35px; transition:all ease-in .2s; opacity:1; }
 .btn-base.primary.type-arrow:hover:after { margin:-4px 0 0; width:0; opacity:0; }
-.btn-base.primary.type-arrow { padding-left:30px; padding-right:30px;  }
+.btn-base.primary.type-arrow { padding:17px 15px 12px; font-size:20px; padding-left:30px; padding-right:30px;  }
 
 .btn-search:before { width:41px; height:41px; background:url('../img/btn_search.png') center/auto auto no-repeat #4965CE; border-radius:50%; transition:background-color ease-in .2s; content:""; display:inline-block; vertical-align:middle;}
 .btn-search span { margin-left:5px; }
@@ -952,11 +952,14 @@ fieldset:after { display:block; clear:both; content:""; }
 /* 선생님 목록
 ================ */
 .teacher-subpage { padding:60px 0;  background:#E4ECFC; }
+.teacher-subpage.no-bg,
+.teacher-subpage.no-bg .main-teacher { background:none; }
 
 /* 회원가입
 ================ */
 .join-box { background:#F4F7FC; padding:60px 0; }
 .join-box .join-grid { max-width:627px; margin:0 auto; padding:0 15px; }
+.join-box .btn-area .btn-base { min-width:240px; text-align:center;}
 .form-row { display:flex; margin-top:10px; }
 .form-row:first-child { margin-top:0; }
 .form-area { flex:1 1 100%; display:flex; align-items:flex-start; }
@@ -979,6 +982,13 @@ fieldset:after { display:block; clear:both; content:""; }
 .form-item.type-email .select { width:140px; }
 .form-item .divide + .form { margin-left:0; }
 .form-item .select { border:0; padding:0 10px; height:52px; border-radius:10px; width:100%; font-size:16px; }
+
+.login .btn-base.primary.type-arrow span { margin-left:55px; }
+.login-txt { font-size:20px; text-align:center; margin-bottom:30px; }
+.login .form-area { max-width:395px; margin:0 auto; }
+.login .form-area .form-item { flex:1 1 100%; }
+.login .form-area .form-item .form { display:table; width:100%; }
+.login .form-area .form-item .form span { display:table-cell; vertical-align:middle; padding:0 10px; text-align:center; ;}
 
 .inp-area.type-unit { position:relative; display:table;  }
 .inp-area.type-unit .unit { display:table-cell; padding:0 10px 0 0; vertical-align:middle; color:#929292; }
