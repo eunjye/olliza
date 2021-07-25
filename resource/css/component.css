@@ -549,7 +549,9 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .dialog-dim.show .dialog-area { display:block; }
 .dialog-dim .dialog-area { animation:aniDialogHide .3s both; }
 .dialog-dim.center { justify-content:center; align-items:center; }
-.dialog-area { display:none; position:relative; width:560px; box-shadow:0 0 10px rgba(0,0,0,.6);}
+.dialog-area { display:none; position:relative; max-width:560px; box-shadow:0 0 10px rgba(0,0,0,.6); width:calc(100% - 50px); }
+.dialog-area.size-l { max-width:758px; }
+.dialog-area .dialog-body { padding:50px 25px; }
 .dialog-head { padding:15px 45px 15px 20px; background:#fff; }
 .dialog-head h2 { font-size:20px; word-break:break-all; }
 .dialog-body { max-height:calc(100vh - 100px); padding:50px 55px; background:#F4F7FC; overflow-y:auto; }
@@ -1021,6 +1023,7 @@ fieldset:after { display:block; clear:both; content:""; }
 /* [P] 주문 결제
 =============*/
 .dialog-tit { font-size:28px; text-align:center; margin:0 -20px; word-break:keep-all; }
+.dialog-tit.size-l { font-size:40px; }
 .dialog-tit strong { font-weight:700; }
 .payment-area { margin-top:15px; border-top:1px solid #252525; padding:20px 0; }
 .payment-rdo { text-align:center; }
@@ -1040,6 +1043,33 @@ fieldset:after { display:block; clear:both; content:""; }
 .payment-footer .btns { flex:0 0 auto; }
 .payment-footer .btn-base.primary.type-arrow:after { margin-left:10px; }
 
+/* [P] 시간표
+================ */
+.type-timetable { margin-top:30px; }
+.type-timetable .bbs-upper { display:block !important; overflow-x:auto; padding-bottom:0; }
+.type-timetable .bbs-upper li { text-align:center; }
+.type-timetable .bbs-list .item span { flex:1 1 auto; text-align:center; }
+.type-timetable { overflow-x:auto; }
+.type-timetable .inner-scroll { min-width:500px; }
+.type-timetable .bbs-list .header { display:flex; padding:15px 0; }
+.type-timetable .bbs-list .header span { flex:1 1 auto; }
+.type-timetable .no { width:15%; flex-basis:15%; }
+.type-timetable .date { width:20%; flex-basis:20%; }
+.type-timetable .start { width:20%; flex-basis:20%; }
+.type-timetable .end { width:20%; flex-basis:20%; }
+.type-timetable .status { width:25%; flex-basis:25%; }
+.chk-toggle { display:inline-block; }
+.chk-toggle input { position:absolute; width:1px; height:1px; opacity:0; }
+.chk-toggle .n2 { display:none; }
+.chk-toggle label { position:relative; display:inline-block; background:#b7c8f8; color:#fff; font-size:16px; height:36px; line-height:36px; border-radius:18px; padding:0 45px 0 15px; transition:all ease-in .2s; }
+.chk-toggle label:after { position:absolute; top:3px; right:3px; display:block; width:30px; height:30px; border-radius:50%; background:#fff; content:""; transition:right ease-in .2s; }
+.chk-toggle input:checked + label { padding:0 15px 0 45px; background:#6985d5; }
+.chk-toggle input:checked + label:after { right:calc(100% - 33px); }
+.chk-toggle input:checked + label .n1 { display:none; }
+.chk-toggle input:checked + label .n2 { display:inline; }
+.timetable-area .paging-link { margin:0; }
+.timetable-area .btn-jump { margin:0 2px; }
+.timetable-area .paging-link a { width:20px; }
 
 /* wide */
 @media (min-width:1920px) {
