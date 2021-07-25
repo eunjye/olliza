@@ -269,6 +269,9 @@
 	.bbs-list[class*="type-"] .item { position:relative; }
 	.bbs-list[class*="type-"] .item .num { position:absolute; top:0; left:0; height:100%; min-width:50px; height:100%; line-height:1; padding:18px 10px 15px; width:50px; }
 	.bbs-list[class*="type-"] .subject { display:block; width:auto; padding:10px 0 5px 0; }
+	.bbs-list.acco .subject { display:inline; }
+	.bbs-list.acco .item.open .additional { flex:0 0 100%; width:100%; text-align:left; padding:0; }
+	.bbs-list.acco .item.open .num { padding:0; }
 	.bbs-list[class*="type-"] .subject span { width:auto; max-width:calc(100% - 40px); }
 	.bbs-list[class*="type-"] .item .class { padding-left:0; }
 	.bbs-list .is-lock .subject { padding:0 0 5px 30px; background-position:0 0; }

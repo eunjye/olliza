@@ -245,9 +245,14 @@
       <script type="text/javascript">
         ; (function ($, win, doc, undefined) {
           $(doc).on('ready.olliza', function () {
-            $('.review-area .item a').off('click.aa').on('click.aa', function(){
-              $('.review-area .item.open').removeClass('open');
-              $(this).closest('.item').toggleClass('open');
+            $('.bbs-list .item a').off('click.aa').on('click.aa', function(){
+							var $ts = $(this).closest('.item');
+							if ($ts.hasClass('open')) { 
+								$ts.removeClass('open');
+							} else {
+              	$('.bbs-list .item.open').removeClass('open');
+								$ts.addClass('open');
+							}
             })
 
           });
