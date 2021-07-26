@@ -717,7 +717,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list .subject .comment { margin-left:5px; vertical-align:middle; }
 .bbs-list .has-img .subject span { max-width:calc(100% - 40px); }
 .bbs-list .is-lock .subject { padding-left:60px; background:url('../img/ico_lock.png') 30px center/auto auto no-repeat; }
-.bbs-list .is-lock .subject span { max-width:calc(100% - 40px); width:calc(100% - 40px); }
+.bbs-list .is-lock .subject span { max-width:calc(100% - 40px); }
 .bbs-list .additional { flex:0 0 auto; text-align:right; color:#7c7c7c; font-size:16px; white-space:nowrap;}
 .bbs-list .additional > span { display:inline-block; width:120px; text-align:center; vertical-align:middle; }
 .bbs-list .additional > span:first-child { margin-left:0; word-break:break-all; white-space:normal; }
@@ -758,7 +758,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list.type-review .subject { width:30%; flex-basis:30%; }
 .bbs-list .subject .score-area { width:120px; display:block; zoom:.7; }
 .type-notice .item .num,
-.bbs-upper.type-notice .num { flex:1 1 7%; width:7%; }
+.bbs-upper.type-notice .num { flex:0 0 70px; width:70px; }
 .type-notice .item .subject,
 .bbs-upper.type-notice .subject { flex:1 1 65%; width:65%; }
 .type-notice .item .subject { padding-left:20px; }
@@ -894,7 +894,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .btn-link2 { font-size:16px; }
 .btn-link2 span { border-bottom:1px solid #252525; color:#252525; }
 .btn-link2:hover span { border-bottom:1px solid transparent; }
-.btn-link2:after { display:inline-block; width:8px; height:8px; border-right:1px solid #252525; border-bottom:1px solid #252525; transform:rotate(-45deg); content:""; vertical-align:middle; margin:-2px 0 0 8px; }
+/* .btn-link2:after { display:inline-block; width:8px; height:8px; border-right:1px solid #252525; border-bottom:1px solid #252525; transform:rotate(-45deg); content:""; vertical-align:middle; margin:-2px 0 0 8px; } */
 
 /* icons
 ==================*/
@@ -988,6 +988,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .teacher-subpage .tab-btns { padding-bottom:0; }
 .teacher-subpage.no-bg,
 .teacher-subpage.no-bg .main-teacher { background:none; }
+.teacher-subpage .main-teacher .tit-d1:before { display:none; }
 .subpage-area .main-teacher:last-child { padding-bottom:0; }
 
 /* 회원가입
@@ -1031,9 +1032,12 @@ fieldset:after { display:block; clear:both; content:""; }
 .form-area .form-item.type-text { max-width:300px; flex:1 1 100%; }
 .form-area .form-item.type-btn .form { background:none; border-color:transparent; }
 .form-area .form-item.type-btn .form .btn-base { margin:7px 15px 7px; }
-.login-util { margin-top:30px; overflow:hidden;}
+.login .inp { width:266px; }
+.login-util { max-width:395px; margin:15px auto 0;}
+.login-util:after { display:block; clear:both; content:""; }
 .login-util .rdo-area { float:left; }
 .login-util .link { float:right; }
+.login-util .rdo-area .chk-item { margin-right:10px; }
 .login + .teacher-subpage .main-teacher-list { justify-content:center; }
 
 .inp-area.type-unit { position:relative; display:table;  }
@@ -1150,7 +1154,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .platform-cont > div.teacher:before { background-position-y:-90px; }
 .platform-cont > div.matching:before { background-position-y:-180px; }
 
-.team-area { padding:65px 0 294px; }
+.team-area { padding:65px 0 164px; }
 .team-area .cont-grid { position:relative; max-width:1288px; }
 .team-area .tit-d1 { position:absolute; left:50px; top:0; color:#604dcd; text-indent:-20px; padding-left:20px; text-align:left; line-height:1.2; }
 .team-area .tit-d1 strong { color:#994cf1; line-height:inherit; }
@@ -1224,7 +1228,7 @@ fieldset:after { display:block; clear:both; content:""; }
 /* only PC */
 @media (min-width:1025px) {
 
-	.header-area .header-inner { border-bottom:1px solid #d6dcfa; }
+	.header-area .header-inner { border-bottom:1px solid #d6dcfa; height:105px; }
 	.only-resp { display:none !important; }
 
 	/* new header */
