@@ -282,7 +282,6 @@
 	.bbs-list.type-notice .subject { padding-top:0; margin-right:0; }
 	.bbs-list.type-notice .header > span,
 	.bbs-list.type-notice .header > strong { margin-right:0; }
-	.bbs-list.type-notice .subject span { max-width:100%; }
 
 	.search-inner { flex-wrap:wrap; }
 	.search-inner > div { display:block; width:auto; flex:1 1 auto; }
@@ -310,6 +309,11 @@
 	
 	.form-item .form .text { padding:16px 15px 14px; } 
 	.form-item .rdo-area { margin:16px 15px 14px; }
+
+	/* 올리자 소개
+	============== */
+	.team-area .tit-d1 { position:static; text-align:center; }
+
 }
 
 @media (max-width:765px) {
@@ -576,6 +580,22 @@
 	.terms-area .tit1 { font-size:18px; font-weight:700; margin:15px 0 10px; }
 	.terms-area .tit2 { font-size:16px; margin:10px 0 5px;  }
 
+	/* 올리자 소개
+	================= */
+	.intro-area .tit-d1 { font-size:26px; margin-bottom:25px; }
+	.goal-area { padding:0 0 50px; }
+	.goal-cont { max-width:475px; }
+	.goal-cont .logo { margin-top:15px; width:140px; height:140px; line-height:120px; border-width:6px; }
+	.goal-cont .inner { top:0; left:150px; }
+	.goal-cont .inner span { font-size:16px; height:auto; padding:10px 20px; }
+
+	.team-cont img { display:none; }
+	.team-cont > div { position:static; max-width:100%; }
+	.team-cont > div.n1,
+	.team-cont > div.n2,
+	.team-cont > div.n3 { margin:0 0 25px; }
+	.team-cont > div .tit { display:block; }
+	.team-area { padding-bottom:0 }
 }
 /* only mo */
 @media (min-width:501px) {
@@ -687,6 +707,25 @@
 	.search-inner .search-btns .btn-base { padding:0 10px; min-width:0; }
 
 
+	/* 올리자 소개
+	================= */
+	.intro-area .tit-d1 { font-size:20px; }
+	.goal-area { padding:0 0 50px; }
+	.goal-cont .logo { display:block; position:static; margin:0 auto 20px; text-align:center; }
+	.goal-cont .inner { position:relative; left:auto; }
+	.goal-cont .inner span { position:static; padding:10px 25px; }
+	.goal-cont .inner span:before { display:none; }
+
+	.platform-area .tit-d1 span { padding:0 20px; }
+	.platform-area .tit-d1 span:before, .platform-area .tit-d1 span:after { width:10px; border-width:3px; }
+	.platform-area .tit-d1 span:before { border-right-width:0; }
+	.platform-area .tit-d1 span:after { border-left-width:0; }
+	.platform-cont > div { width:100%; margin-top:25px; }
+	.platform-cont > div:first-child { margin-top:0; }
+	.platform-cont > div:after { display:none; }
+
+	.team-cont > div .tit { font-size:16px; }
+	.team-cont > div { font-size:14px; border-left-width:2px; }
 }
 
 @media (max-width:400px) {

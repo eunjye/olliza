@@ -171,7 +171,7 @@ ul.bul-dot > li { color:#454545; margin-top:8px; padding-left:16px; font-size:18
 .logo span {display:inline-block; vertical-align:middle; }
 .logo span { margin-left:7px; }
 
-.header-area { z-index:10; position:relative; top:0; left:0; width:100%; height:105px; transition:all ease-in-out .2s; background:#fff; overflow:hidden;  border-bottom:1px solid #e1e1e1; }
+.header-area { z-index:10; position:relative; top:0; left:0; width:100%; height:105px; transition:all ease-in-out .2s; background:#fff; overflow:hidden; }
 .header-area.fixed { z-index:21; top:0; }
 .header-area.fixed .header-inner { position:fixed; top:0; z-index:20; width:100%; background:#fff; height:105px; }
 .header-area .header-grid { max-width:1500px; padding:10px 50px 0; margin:0 auto; height:100%; }
@@ -767,7 +767,7 @@ fieldset:after { display:block; clear:both; content:""; }
 .bbs-list.type-notice .header { padding-right:0; }
 .type-notice .item.open .additional { flex:1 1 5%; width:5%; padding-left:25px; text-align:center;}
 
-.bbs-list.type-notice .subject span { font-size:16px; }
+.bbs-list.type-notice .subject span  { max-width:calc(100% - 35px); font-size:16px; }
 
 .bbs-write { border:1px solid #d2d2d2; border-radius:12px; overflow:hidden; }
 .tbl-bbs { width:100%; }
@@ -1117,6 +1117,51 @@ fieldset:after { display:block; clear:both; content:""; }
 .recruit-area .btn-area .btn-base { max-width:320px; width:100%; }
 .recruit-area .form-area { background-color:#fff; }
 
+/* 올리자 소개
+================ */
+.intro-area .tit-d1 { font-size:40px; margin-bottom:45px; font-weight:700; text-align:center; line-height:1; word-break:keep-all; }
+.goal-area { padding:25px 0 70px; }
+.goal-area .tit-d1 { font-size:44px; color:#604dcd; }
+.goal-area .tit-d1 strong { color:#994cf1; }
+.goal-cont { position:relative; max-width:690px; margin:0 auto; }
+.goal-cont .logo { z-index:1; position:relative; width:192px; height:192px; border-radius:50%; border:12px solid #c4bfe7; text-align:center; line-height:164px; background:#fff; }
+.goal-cont .logo img { width:90%; max-width:auto; }
+.goal-cont .inner { position:absolute; left:260px; top:0; max-width:426px; }
+.goal-cont .inner span { position:relative; display:block; width:100%; height:55px; border-radius:28px; color:#fff; font-size:22px; padding:12px 25px; margin-bottom:15px; }
+.goal-cont .inner span:before { z-index:-1; position:absolute; top:50%; right:100%; display:block; width:150px; height:1px; background:#c4bfe7; content:""; }
+.goal-cont .inner span.n1:before { margin-top:20px; margin-right:-40px; transform:rotate(-30deg); }
+.goal-cont .inner span.n3:before { margin-top:-20px; margin-right:-40px; transform:rotate(30deg); }
+.goal-cont .inner span.n1 { background:#69aae0; }
+.goal-cont .inner span.n2 { background:#767eed; }
+.goal-cont .inner span.n3 { background:#a076ed; }
+.goal-cont .inner span strong { color:#d8ff70; font-weight:700; }
+
+.platform-area { padding:70px 0; background:#9183e6; color:#fff; }
+.platform-area .tit-d1 span { display:inline-block; position:relative; padding:0 45px; }
+.platform-area .tit-d1 strong { color:#d8ff70; }
+.platform-area .tit-d1 span:before,
+.platform-area .tit-d1 span:after { display:block; position:absolute; content:""; border:4px solid #fff; border-right-width:0; width:20px; top:0; bottom:0; left:0; }
+.platform-area .tit-d1 span:after { border-right-width:4px; border-left-width:0; right:0; left:auto; }
+.platform-cont { overflow:hidden; max-width:860px; margin:0 auto; }
+.platform-cont > div { float:left; width:33.333%; position:relative; text-align:center; font-size:16px; padding:0 15px; word-break:keep-all; }
+.platform-cont > div:before { display:block; width:120px; height:90px; margin:0 auto 5px; background:url('../img/sp_ico_platform.png') 0 0/120px auto no-repeat; content:""; }
+.platform-cont > div:after { position:absolute; top:0; left:0; height:130px; width:1px; background:#a296ea; content:""; display:block; }
+.platform-cont > div:first-child:after { display:none; }
+.platform-cont > div.teacher:before { background-position-y:-90px; }
+.platform-cont > div.matching:before { background-position-y:-180px; }
+
+.team-area { padding:65px 0 294px; }
+.team-area .cont-grid { position:relative; max-width:1288px; }
+.team-area .tit-d1 { position:absolute; left:50px; top:0; color:#604dcd; text-indent:-20px; padding-left:20px; text-align:left; line-height:1.2; }
+.team-area .tit-d1 strong { color:#994cf1; line-height:inherit; }
+.team-cont { text-align:center; line-height:0; position:relative; }
+.team-cont > div { position:absolute; border-left:4px solid #9092f1; padding-left:15px; font-size:16px; color:#202f75; text-align:left; max-width:50%; }
+.team-cont > div.n1 { top:50px; left:50%; margin-left:130px; }
+.team-cont > div.n2 { top:610px; left:0; }
+.team-cont > div.n3 { top:610px; left:50%; margin-left:45px; }
+.team-cont > div .tit { display:none; font-size:20px; font-weight:700; margin-bottom:10px; }
+.team-cont > div .highlight { display:inline; line-height:1.2; font-weight:700; background:#9cf1e9; }
+
 /* wide */
 @media (min-width:1920px) {
 	.slider-visual .slide { background-size:contain; background-repeat:no-repeat; }
@@ -1179,6 +1224,7 @@ fieldset:after { display:block; clear:both; content:""; }
 /* only PC */
 @media (min-width:1025px) {
 
+	.header-area .header-inner { border-bottom:1px solid #d6dcfa; }
 	.only-resp { display:none !important; }
 
 	/* new header */
